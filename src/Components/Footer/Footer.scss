@@ -53,7 +53,7 @@
 }
 
 // when screen is bigger than 768px
-@media (min-width: 768.9px) {
+@media (min-width: $screen-breakpoint) {
   .footer {
     .footer-green-product-info {
       p {

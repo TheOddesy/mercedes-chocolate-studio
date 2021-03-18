@@ -76,7 +76,7 @@
 }
 
 // when screen is largen than 768px
-@media (min-width: 768.9px) {
+@media (min-width: $screen-breakpoint) {
   .about-container {
     padding: 1rem;
     margin: 0 auto -16rem;

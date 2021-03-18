@@ -52,14 +52,14 @@
 }
 
 // when screen is smaller than 768px
-@media (max-width: 768.9px) {
+@media (max-width: $screen-breakpoint) {
   .intro-desktop {
     display: none;
   }
 }
 
 // when screen is largen than 768px
-@media (min-width: 768.9px) {
+@media (min-width: $screen-breakpoint) {
   .intro-mobile {
     display: none;
   }

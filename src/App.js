@@ -10,16 +10,16 @@ function App() {
         <Navigation />
         <div className='wrapper'>
           <Switch>
-            <Route exact path='/'>
+            <Route exact path='/mercedes-chocolate-studio/'>
               <Main />
             </Route>
-            <Route exact path='/Products'>
+            <Route exact path='/mercedes-chocolate-studio/Products'>
               <Products />
             </Route>
-            <Route exact path='/About'>
+            <Route exact path='/mercedes-chocolate-studio/About'>
               <About />
             </Route>
-            <Route exact path='/Contact'>
+            <Route exact path='/mercedes-chocolate-studio/Contact'>
               <Contact />
             </Route>
           </Switch>

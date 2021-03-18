@@ -38,7 +38,7 @@
 }
 
 // when screen is largen than 768px
-@media (min-width: 768.9px) {
+@media (min-width: $screen-breakpoint) {
   .products {
     padding: 2rem 0 0 0;
     h2 {

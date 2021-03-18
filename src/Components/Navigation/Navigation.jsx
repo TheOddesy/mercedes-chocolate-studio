@@ -37,32 +37,32 @@ const Navigation = () => {
             ≡
           </button>
           <div id='myDropdown' className='dropdown-content'>
-            <NavLink exact activeClassName='active' to='/'>
+            <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/'>
               HEM
             </NavLink>
-            <NavLink exact activeClassName='active' to='/Products'>
+            <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/Products'>
               PRODUKTER
             </NavLink>
-            <NavLink exact activeClassName='active' to='/About'>
+            <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/About'>
               OM OSS
             </NavLink>
-            <NavLink exact activeClassName='active' to='/Contact'>
+            <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/Contact'>
               KONTAKT
             </NavLink>
           </div>
         </div>
 
         <div className='nav-desktop'>
-          <NavLink exact activeClassName='active' to='/'>
+          <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/'>
             HEM
           </NavLink>
-          <NavLink exact activeClassName='active' to='/Products'>
+          <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/Products'>
             PRODUKTER
           </NavLink>
-          <NavLink exact activeClassName='active' to='/About'>
+          <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/About'>
             OM OSS
           </NavLink>
-          <NavLink exact activeClassName='active' to='/Contact'>
+          <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/Contact'>
             KONTAKT
           </NavLink>
         </div>
