@@ -1,0 +1,117 @@
+@import '../../variables';
+
+.about-container {
+  //border: 1px solid black;
+  max-width: 70rem;
+  padding: 2rem 1rem 1rem;
+  box-sizing: border-box;
+  margin: 0rem auto -16rem;
+  a {
+    text-decoration: underline;
+    color: $text-dark;
+  }
+
+  .about-person {
+    width: 100%;
+    //border: 1px solid red;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto 1rem;
+
+    .profile-picture {
+      //border: 1px solid blue;
+      box-sizing: border-box;
+      height: 14.5rem;
+      width: 12rem;
+      margin: auto;
+      overflow: hidden;
+      img {
+        height: auto;
+        width: 100%;
+        background-size: contain;
+        border-radius: 1rem;
+      }
+      .profile-mercedes {
+        transform: scale(-1, 1);
+      }
+    }
+    .profile-peter {
+      height: 13.5rem;
+      width: 14.5rem;
+    }
+    .about-content {
+      //border: 1px solid yellow;
+      width: 100%;
+    }
+  }
+
+  .about-garden {
+    box-sizing: border-box;
+    margin: 0 auto 0;
+    width: 100%;
+    //border: 1px solid cyan;
+    h2 {
+      font-size: 1.5rem;
+      margin: 0 auto;
+      width: fit-content;
+      text-align: center;
+    }
+    .profile-garden {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      overflow: hidden;
+      border-radius: 1rem;
+      margin: 1rem auto;
+      img {
+        height: auto;
+        width: 100%;
+        background-size: contain;
+        border-radius: 1rem;
+      }
+    }
+  } // garden
+}
+
+// when screen is largen than 768px
+@media (min-width: 768.9px) {
+  .about-container {
+    padding: 1rem;
+    margin: 0 auto -16rem;
+
+    .about-person {
+      flex-flow: row;
+      justify-content: center;
+      align-items: flex-start;
+      .profile-picture {
+        //height: 135%; //h30 w24
+        width: 35%;
+        height: auto;
+        margin: 1rem;
+      }
+      .about-content {
+        width: 60%;
+      }
+    } //content
+    .about-garden {
+      .profile-garden {
+        img {
+          margin: -2rem 0 0 0;
+        }
+      }
+    } //garden
+  } // about
+
+  .about-mobile {
+    display: none;
+  }
+}
+
+// when screen is smaller than 768px
+@media (max-width: 768.9px) {
+  .about-desktop {
+    display: none;
+  }
+}

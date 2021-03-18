@@ -1,0 +1,126 @@
+@import '../../variables';
+
+.intro {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto -16rem;
+  padding: 1rem;
+
+  .intro-picture-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border-radius: 1rem;
+
+    img {
+      height: auto;
+      width: 100%;
+      background-size: contain;
+      border-radius: 1rem;
+    }
+  }
+
+  .description {
+    width: 100%;
+    margin: 0;
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      width: fit-content;
+      box-sizing: border-box;
+      padding: 1rem 1rem 0rem;
+      margin: auto;
+      color: $text-dark;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      width: fit-content;
+      margin: 1rem auto;
+      color: $text-dark;
+    }
+    p {
+      color: $text-dark;
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
+    a {
+      text-decoration: underline;
+      color: $text-dark;
+    }
+  }
+}
+
+// when screen is smaller than 768px
+@media (max-width: 768.9px) {
+  .intro-desktop {
+    display: none;
+  }
+}
+
+// when screen is largen than 768px
+@media (min-width: 768.9px) {
+  .intro-mobile {
+    display: none;
+  }
+
+  .intro {
+    // height: 56vw;
+    // min-height: 45rem;
+    height: 40rem;
+    padding: 0;
+    background: $main-background;
+    .intro-picture-wrapper {
+      width: 100%;
+      height: 100%;
+      max-width: 70rem;
+      position: relative;
+      border-radius: 0;
+      img {
+        border-radius: 0;
+        margin: 0;
+      }
+    }
+
+    .description {
+      width: 80%;
+      max-width: 50rem;
+      box-sizing: border-box;
+      padding: 1rem 0;
+      margin: 0 auto;
+      border-radius: 1rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.35);
+      // background-color: #31171050;
+      backdrop-filter: blur(10px);
+      box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.5);
+      h1 {
+        font-size: 3rem;
+        padding: 1rem 1rem 0;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        margin: 1rem auto;
+        width: 90%;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+    }
+  } // intro
+}
+
+// when screen is largen than 920px
+@media (min-width: 920.9px) {
+  .intro {
+    .intro-picture-wrapper {
+      img {
+        margin: -8rem 0 0 0;
+      }
+    }
+  }
+}

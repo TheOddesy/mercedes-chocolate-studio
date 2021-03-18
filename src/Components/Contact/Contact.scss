@@ -1,0 +1,84 @@
+@import '../../variables';
+
+.contact-wrapper {
+  border-top: 0;
+  box-sizing: border-box;
+  margin: 0 auto -14rem;
+  max-width: 70rem;
+  padding: 2rem 1rem 2rem;
+
+  .contact-text {
+    display: flex;
+    flex-flow: column;
+  }
+  h2 {
+    margin: 2rem 0 0;
+  }
+  a {
+    text-decoration: underline;
+    color: $text-dark;
+  }
+
+  .contact-ordering {
+    max-width: 30rem;
+
+    margin: 0;
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .contact-information {
+    .contact-flex {
+      display: flex;
+
+      margin: 0.5rem 0;
+      p {
+        font-size: 1rem;
+        margin: 0 0 0 0.5rem;
+      }
+      .contact-icons {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// when screen is largen than 768px
+@media (min-width: 768.9px) {
+  .contact-wrapper {
+    margin: 0 auto -16rem;
+
+    .contact-text {
+      flex-flow: row;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
+    .contact-ordering {
+      margin: 0 2rem 0 0;
+      //max-width: 30rem;
+      width: 50%;
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .contact-information {
+      width: fit-content;
+      width: 50%;
+      .contact-flex {
+        display: flex;
+
+        margin: 0.5rem 0;
+        p {
+          font-size: 1.1rem;
+          margin: 0 0 0 0.5rem;
+        }
+        .contact-icons {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

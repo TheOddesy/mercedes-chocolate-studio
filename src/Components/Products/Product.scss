@@ -1,0 +1,128 @@
+@import '../../variables';
+
+.product-wrapper {
+  background: $beige;
+  box-sizing: border-box;
+  max-width: 22rem;
+  // width: 19rem;
+  height: 31.5rem;
+  padding: 0;
+  margin: 0.5rem;
+  border: 0px solid $brown;
+  //box-shadow: 0 0px 5px 5px #00000050;
+  border-radius: 1rem;
+  color: $text-dark;
+  overflow: hidden;
+
+  .product-image-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    // height: 12rem;
+    // height: 20rem;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      background-size: contain;
+    }
+  } //image-wrapper
+
+  .product-information-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    box-sizing: border-box;
+    width: calc(100% - 1rem);
+    margin: 0 0 0.5rem;
+    height: fit-content;
+    padding: 0.5rem 0.1rem 0.5rem;
+    border-radius: 1rem;
+
+    //border: 1px solid #00000050;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1rem);
+
+    text-align: center;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 0;
+      //height: 3.5rem;
+      text-transform: lowercase;
+    }
+    h3::first-letter {
+      text-transform: capitalize;
+    }
+
+    .description {
+      //height: 3rem;
+      margin: 0.5rem 0;
+      min-width: 100%;
+      font-size: 1rem;
+    }
+    .price {
+      font-weight: 600;
+      font-size: 1.2rem;
+      //height: 1.5rem;
+      margin: 0.5rem 0 0rem;
+    }
+  } //information-wrapper
+} //product-wrapper
+
+// --- --- --- --- --- --- --- --- --- --- --- --- ---
+.ingredients-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-button {
+  color: $text-dark;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 0.3rem;
+  font-size: 1rem;
+  margin: 0.3rem 0 0;
+  border: 1px solid $text-dark;
+  border-radius: 0.4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+}
+
+.show-ingredients {
+  display: none;
+  position: absolute;
+  bottom: 1.9rem;
+  left: -5rem;
+  width: 16rem;
+  max-height: fit-content;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: $brown;
+  border-radius: 0.4rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  p {
+    color: $text-ingredients;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.ingredients-wrapper:hover .show-ingredients {
+  display: block;
+}
+
+.ingredients-wrapper:hover .hover-button {
+  background-color: $text-dark;
+  color: $beige;
+  cursor: pointer;
+  outline: none;
+}

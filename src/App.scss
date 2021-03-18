@@ -1,0 +1,38 @@
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  background: $background;
+  box-sizing: border-box;
+  color: $text-dark;
+
+  //   background-image: url("./Assets/background/cacao.jpg");
+  //   background-image: url("https://toppng.com//public/uploads/preview/beans-vector-svg-coffee-bean-icon-11563234646tcumnuunra.png");
+  //   background-repeat: space;
+  //   background-size: 50px 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  min-height: calc(100vh - 21rem);
+  margin: 0;
+  /* Equal to height of footer 16rem + header 5 rem */
+}
+
+.sticky-footer,
+.push {
+  height: 16rem;
+}

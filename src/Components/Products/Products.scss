@@ -1,0 +1,59 @@
+@import '../../variables';
+
+.products {
+  box-sizing: border-box;
+  margin: 0 auto -14rem;
+  max-width: 70rem;
+  padding: 4rem 0 0;
+
+  h1 {
+    color: $text-dark;
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0 auto 1rem;
+  }
+
+  .product-information {
+    color: $text-dark;
+    text-align: center;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    margin: auto;
+    p {
+      font-size: 1.2rem;
+      margin: 1rem;
+      padding: 0 0.5rem;
+    }
+    a {
+      text-decoration: underline;
+      color: $text-dark;
+    }
+  }
+
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+// when screen is largen than 768px
+@media (min-width: 768.9px) {
+  .products {
+    padding: 2rem 0 0 0;
+    h2 {
+      margin: 0rem auto 1rem;
+    }
+    .product-information {
+      p {
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 0;
+      }
+      a {
+        text-decoration: underline;
+        color: $text-dark;
+      }
+    }
+  }
+}

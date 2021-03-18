@@ -1,0 +1,77 @@
+@import '../../variables';
+
+.footer {
+  height: 16rem;
+  width: 100%;
+  margin: 0;
+  position: relative;
+
+  .footer-green-product-info {
+    height: 6rem;
+    width: 100%;
+    background-color: $footer-up;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 1.3rem;
+      max-width: 90%;
+      color: $text-dark;
+      padding: 0rem;
+      text-align: center;
+    }
+  }
+
+  .footer-information {
+    background-color: $footer-down;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10rem;
+    p {
+      color: $text-light;
+      margin: 4px auto 0;
+      text-align: center;
+    }
+    a {
+      color: $text-light;
+      text-decoration: none;
+      margin: 4px 0 0 0;
+    }
+
+    .contact-fonts-phone {
+      margin: 0 0 -4px 0;
+    }
+    .contact-fonts-mail {
+      margin: 0 4px -4px 0;
+    }
+    .social-media-icons {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// when screen is bigger than 768px
+@media (min-width: 768.9px) {
+  .footer {
+    .footer-green-product-info {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+} //media
+
+.created {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  a {
+    width: fit-content;
+    color: #ffffff50;
+    font-size: 0.8rem;
+  }
+}
