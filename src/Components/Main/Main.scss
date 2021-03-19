@@ -51,12 +51,16 @@
   }
 }
 
+// ---------------------------------------------------------------
+
 // when screen is smaller than 768px
 @media (max-width: $screen-breakpoint) {
   .intro-desktop {
     display: none;
   }
 }
+
+// ---------------------------------------------------------------
 
 // when screen is largen than 768px
 @media (min-width: $screen-breakpoint) {
@@ -65,16 +69,20 @@
   }
 
   .intro {
-    // height: 56vw;
-    // min-height: 45rem;
-    height: 40rem;
-    height: 40rem;
-    padding: 0;
+    border: 1px solid rgba(0, 0, 255, 0);
+    box-sizing: border-box;
+    //height: 40rem;
+    max-width: 70rem;
     background: $main-background;
+    margin: 0 auto -16rem;
+    padding: 0;
     .intro-picture-wrapper {
+      //border: 1px solid red;
+      box-sizing: border-box;
       width: 100%;
-      height: 100%;
-      max-width: 70rem;
+      overflow: hidden;
+      margin: 0 0 -1rem;
+      //max-width: 70rem;
       position: relative;
       border-radius: 0;
       img {
@@ -91,7 +99,8 @@
       margin: 0 auto;
       border-radius: 1rem;
       position: absolute;
-      top: 50%;
+      top: 40%;
+      top: calc(25% + 20vh);
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: rgba(255, 255, 255, 0.35);
@@ -115,13 +124,15 @@
   } // intro
 }
 
+// ---------------------------------------------------------------
+
 // when screen is largen than 920px
-@media (min-width: 920.9px) {
-  .intro {
-    .intro-picture-wrapper {
-      img {
-        margin: -8rem 0 0 0;
-      }
-    }
-  }
-}
+// @media (min-width: 920.9px) {
+//   .intro {
+//     .intro-picture-wrapper {
+//       img {
+//         margin: -8rem 0 0 0;
+//       }
+//     }
+//   }
+// }
