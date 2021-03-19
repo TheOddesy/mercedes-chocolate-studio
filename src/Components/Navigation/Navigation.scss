@@ -126,13 +126,14 @@
 // ---------------------------------------------------------
 
 .logo {
-  width: 8rem;
-  height: 8rem;
   overflow: hidden;
   position: absolute;
-  bottom: -4rem;
-  right: 0;
   z-index: 999;
+  width: 6rem;
+  height: 6rem;
+  bottom: -3rem;
+  right: 1rem;
+  top: 2rem;
   img {
     transform: rotate(25deg);
     width: 100%;
@@ -157,8 +158,9 @@
   }
 
   .logo {
-    width: 11rem;
-    height: 11rem;
-    bottom: -6rem;
+    width: 8rem;
+    height: 8rem;
+    top: 1rem;
+    right: 1rem;
   }
 }

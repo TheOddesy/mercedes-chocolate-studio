@@ -3,6 +3,7 @@ import './Navigation.scss';
 import {NavLink} from 'react-router-dom';
 // import { HashLink as Links } from "react-router-hash-link";
 import Logo from '../../Assets/logo/logo.png';
+import {GoThreeBars} from 'react-icons/go';
 
 const Navigation = () => {
   /* When the user clicks on the button,

@@ -21,7 +21,7 @@ const Footer = () => {
           <p>
             <ImPhone className='contact-fonts-phone' /> +358 40 539 6699
           </p>
-          <a href='mailto:mercedeschocolatestudio@gmail.com'>
+          <a href='mailto:mercedeschocolatestudio@gmail.com' target='blank' rel='noopener'>
             <IoMail className='contact-fonts-mail' />
             mercedeschocolatestudio@gmail.com
           </a>

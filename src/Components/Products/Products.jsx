@@ -33,7 +33,7 @@ const products = [
 
   {
     id: 2,
-    name: 'CHOKLADPLATTA MED KARAMEL',
+    name: 'CHOKLADPLATTA MED KARAMELL',
     price: '1st för 8.50 €',
     description: 'Ljuvlig "mjölkchoklad" med en klick kolakräm i varje hjärta. Nötfri.',
     ingredients:

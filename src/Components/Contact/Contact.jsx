@@ -16,13 +16,15 @@ const Contact = () => {
               <h2>Beställningar</h2>
               <p>
                 Vill du beställa något? Skriv ett{' '}
-                <a href='mailto:mercedeschocolatestudio@gmail.com'>mail</a> eller varför inte direkt
-                på{' '}
+                <a href='mailto:mercedeschocolatestudio@gmail.com' target='blank' rel='noopener'>
+                  mail
+                </a>{' '}
+                eller varför inte direkt på{' '}
                 <a href='https://m.me/mu.winquist' target='blank' rel='noopener'>
                   facebook
                 </a>
-                ? Vi svarar vanligtvis inom en dag. Då kan vi komma överens om betalsätt och var den
-                goda chokladen skall levereras. Var inte blyg!
+                ? Vi svarar vanligtvis inom en dag. Då kan vi komma överens om betalsätt och vart
+                den goda chokladen skall levereras. Var inte blyg!
               </p>
             </div>
 
@@ -30,7 +32,10 @@ const Contact = () => {
               <h2>Beställningar till företag</h2>
               <p>
                 Vi kan också uppfylla större beställningar. Kontaka oss via{' '}
-                <a href='mailto:mercedeschocolatestudio@gmail.com'>mail</a> eller{' '}
+                <a href='mailto:mercedeschocolatestudio@gmail.com' target='blank' rel='noopener'>
+                  mail
+                </a>{' '}
+                eller{' '}
                 <a href='https://m.me/mu.winquist' target='blank' rel='noopener'>
                   facebook
                 </a>{' '}
@@ -62,7 +67,7 @@ const Contact = () => {
             <div className='contact-flex'>
               <IoMail className='contact-icons' />
               <p>
-                <a href='mailto:mercedeschocolatestudio@gmail.com'>
+                <a href='mailto:mercedeschocolatestudio@gmail.com' target='blank' rel='noopener'>
                   mercedeschocolatestudio@gmail.com
                 </a>
               </p>
