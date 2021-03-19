@@ -29,9 +29,9 @@ const Navigation = () => {
   return (
     <div>
       <div className='navigation-container'>
-        <div className='logo'>
+        <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/' className='logo'>
           <img src={Logo} alt='logo for mercedes baking studio' />
-        </div>
+        </NavLink>
 
         <div className='nav-mobile'>
           <button type='button' onClick={dropDownMenu} className='drop-button drop-button-part'>
