@@ -69,13 +69,16 @@
   }
 
   .intro {
-    border: 1px solid rgba(0, 0, 255, 0);
+    //border: 1px solid rgb(0, 0, 255);
     box-sizing: border-box;
     //height: 40rem;
     max-width: 70rem;
+    min-height: calc(100vh - 21rem);
     background: $main-background;
     margin: 0 auto -16rem;
     padding: 0;
+    display: flex;
+    align-items: center;
     .intro-picture-wrapper {
       //border: 1px solid red;
       box-sizing: border-box;
@@ -101,6 +104,7 @@
       position: absolute;
       top: 40%;
       top: calc(25% + 20vh);
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: rgba(255, 255, 255, 0.35);
