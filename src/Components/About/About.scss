@@ -12,20 +12,21 @@
   }
 
   .about-person {
-    width: 100%;
     //border: 1px solid red;
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-flow: column;
-    margin: 0 auto 1rem;
+    margin: 0 auto 2rem;
 
     .profile-picture {
       //border: 1px solid blue;
       box-sizing: border-box;
-      height: 14.5rem;
-      width: 12rem;
+      width: 17rem;
+      height: auto;
       margin: auto;
       overflow: hidden;
+      border-radius: 1rem;
       img {
         height: auto;
         width: 100%;
@@ -36,10 +37,6 @@
         transform: scale(-1, 1);
       }
     }
-    .profile-peter {
-      height: 13.5rem;
-      width: 14.5rem;
-    }
     .about-content {
       //border: 1px solid yellow;
       width: 100%;
@@ -48,7 +45,7 @@
 
   .about-garden {
     box-sizing: border-box;
-    margin: 0 auto 0;
+    margin: -2rem auto 0;
     width: 100%;
     //border: 1px solid cyan;
     h2 {
@@ -83,19 +80,26 @@
 
     .about-person {
       flex-flow: row;
-      justify-content: center;
+      //justify-content: center;
       align-items: flex-start;
+      margin: 0 auto 1rem;
       .profile-picture {
-        //height: 135%; //h30 w24
-        width: 35%;
+        width: 30%;
+        min-width: 20rem;
         height: auto;
-        margin: 1rem;
+      }
+      .profile-picture-mercedes {
+        margin: 0 2rem 0 0;
+      }
+      .profile-picture-peter {
+        margin: 0 0 0 2rem;
       }
       .about-content {
-        width: 60%;
+        width: 70%;
       }
     } //content
     .about-garden {
+      margin: 2rem auto 0;
       .profile-garden {
         img {
           margin: -2rem 0 0 0;
