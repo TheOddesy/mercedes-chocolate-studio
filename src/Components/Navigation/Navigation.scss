@@ -30,16 +30,16 @@
   min-height: 3.1rem;
   max-height: 3.1rem;
   background: inherit;
-  color: $beige;
-  font-size: 2.5rem;
   border: 3px solid $beige;
   border-radius: 0.4rem;
   transition: 0.5s;
   overflow: hidden;
   padding: 0;
-  div {
-    margin: 0;
-  }
+  color: $beige;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     cursor: pointer;
   }

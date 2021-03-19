@@ -72,7 +72,7 @@
     //border: 1px solid rgb(0, 0, 255);
     box-sizing: border-box;
     //height: 40rem;
-    max-width: 70rem;
+    max-width: 72rem;
     min-height: calc(100vh - 21rem);
     background: $main-background;
     margin: 0 auto -16rem;
@@ -84,13 +84,13 @@
       box-sizing: border-box;
       width: 100%;
       overflow: hidden;
-      margin: 0 0 -1rem;
-      //max-width: 70rem;
+      margin: 1rem;
       position: relative;
-      border-radius: 0;
+      border-radius: 1rem;
       img {
         border-radius: 0;
         margin: 0;
+        border-radius: 1rem;
       }
     }
 

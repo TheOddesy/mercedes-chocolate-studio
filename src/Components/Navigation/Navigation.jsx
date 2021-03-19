@@ -32,7 +32,8 @@ const Navigation = () => {
         <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/' className='logo'>
           <img src={Logo} alt='logo for mercedes baking studio' />
         </NavLink>
-
+        {/* ≡ */}
+        {/* <GoThreeBars /> */}
         <div className='nav-mobile'>
           <button type='button' onClick={dropDownMenu} className='drop-button drop-button-part'>
             ≡
