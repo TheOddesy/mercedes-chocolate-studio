@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mercedes-chocolate-studio/static/css/main.1ae730f2.chunk.css",
-    "main.js": "/mercedes-chocolate-studio/static/js/main.ceb9ad9d.chunk.js",
-    "main.js.map": "/mercedes-chocolate-studio/static/js/main.ceb9ad9d.chunk.js.map",
+    "main.css": "/mercedes-chocolate-studio/static/css/main.cf2dd1a6.chunk.css",
+    "main.js": "/mercedes-chocolate-studio/static/js/main.5cdadb6e.chunk.js",
+    "main.js.map": "/mercedes-chocolate-studio/static/js/main.5cdadb6e.chunk.js.map",
     "runtime-main.js": "/mercedes-chocolate-studio/static/js/runtime-main.36535e5d.js",
     "runtime-main.js.map": "/mercedes-chocolate-studio/static/js/runtime-main.36535e5d.js.map",
     "static/js/2.7b3739ee.chunk.js": "/mercedes-chocolate-studio/static/js/2.7b3739ee.chunk.js",
     "static/js/2.7b3739ee.chunk.js.map": "/mercedes-chocolate-studio/static/js/2.7b3739ee.chunk.js.map",
     "index.html": "/mercedes-chocolate-studio/index.html",
-    "static/css/main.1ae730f2.chunk.css.map": "/mercedes-chocolate-studio/static/css/main.1ae730f2.chunk.css.map",
+    "static/css/main.cf2dd1a6.chunk.css.map": "/mercedes-chocolate-studio/static/css/main.cf2dd1a6.chunk.css.map",
     "static/js/2.7b3739ee.chunk.js.LICENSE.txt": "/mercedes-chocolate-studio/static/js/2.7b3739ee.chunk.js.LICENSE.txt",
     "static/media/background.69c2768b.jpeg": "/mercedes-chocolate-studio/static/media/background.69c2768b.jpeg",
     "static/media/capuccino.eee68810.jpg": "/mercedes-chocolate-studio/static/media/capuccino.eee68810.jpg",
@@ -18,8 +18,8 @@
     "static/media/lakritsgotties.a62213f2.jpg": "/mercedes-chocolate-studio/static/media/lakritsgotties.a62213f2.jpg",
     "static/media/logo.994690af.png": "/mercedes-chocolate-studio/static/media/logo.994690af.png",
     "static/media/mandelGianduja.f8b69961.jpg": "/mercedes-chocolate-studio/static/media/mandelGianduja.f8b69961.jpg",
-    "static/media/mercedes.83b49a38.jpg": "/mercedes-chocolate-studio/static/media/mercedes.83b49a38.jpg",
-    "static/media/peter.d058808d.jpeg": "/mercedes-chocolate-studio/static/media/peter.d058808d.jpeg",
+    "static/media/mercedes.639de478.jpg": "/mercedes-chocolate-studio/static/media/mercedes.639de478.jpg",
+    "static/media/peter.b869627f.jpg": "/mercedes-chocolate-studio/static/media/peter.b869627f.jpg",
     "static/media/platta.4340ad8c.jpg": "/mercedes-chocolate-studio/static/media/platta.4340ad8c.jpg",
     "static/media/vitChokladJordgubb.46abbc4c.jpg": "/mercedes-chocolate-studio/static/media/vitChokladJordgubb.46abbc4c.jpg",
     "static/media/vitChokladLakrits.9c4ec9ea.jpg": "/mercedes-chocolate-studio/static/media/vitChokladLakrits.9c4ec9ea.jpg"
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.36535e5d.js",
     "static/js/2.7b3739ee.chunk.js",
-    "static/css/main.1ae730f2.chunk.css",
-    "static/js/main.ceb9ad9d.chunk.js"
+    "static/css/main.cf2dd1a6.chunk.css",
+    "static/js/main.5cdadb6e.chunk.js"
   ]
 }
