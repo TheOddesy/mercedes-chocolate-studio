@@ -114,7 +114,7 @@
 }
 
 // when screen is smaller than 768px
-@media (max-width: 768.9px) {
+@media (max-width: $screen-breakpoint) {
   .about-desktop {
     display: none;
   }
