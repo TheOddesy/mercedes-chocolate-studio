@@ -49,6 +49,14 @@
     outline: none;
     transition: 0.5s;
   }
+  .button-design {
+    height: 80%;
+    width: 80%;
+    background: red;
+  }
+}
+button > * {
+  pointer-events: none;
 }
 /* --- --- --- ---  */
 

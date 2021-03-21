@@ -34,9 +34,10 @@ const Navigation = () => {
         </NavLink>
         {/* ≡ */}
         {/* <GoThreeBars /> */}
+        {/* <div className='button-design'></div> */}
         <div className='nav-mobile'>
           <button type='button' onClick={dropDownMenu} className='drop-button drop-button-part'>
-            ≡
+            <GoThreeBars />
           </button>
           <div id='myDropdown' className='dropdown-content'>
             <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/'>
