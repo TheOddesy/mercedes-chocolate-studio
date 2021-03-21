@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mercedes-chocolate-studio/static/css/main.5115ab74.chunk.css",
-    "main.js": "/mercedes-chocolate-studio/static/js/main.03bb278f.chunk.js",
-    "main.js.map": "/mercedes-chocolate-studio/static/js/main.03bb278f.chunk.js.map",
+    "main.css": "/mercedes-chocolate-studio/static/css/main.25258f38.chunk.css",
+    "main.js": "/mercedes-chocolate-studio/static/js/main.8b070f4c.chunk.js",
+    "main.js.map": "/mercedes-chocolate-studio/static/js/main.8b070f4c.chunk.js.map",
     "runtime-main.js": "/mercedes-chocolate-studio/static/js/runtime-main.36535e5d.js",
     "runtime-main.js.map": "/mercedes-chocolate-studio/static/js/runtime-main.36535e5d.js.map",
     "static/js/2.94b5bfc5.chunk.js": "/mercedes-chocolate-studio/static/js/2.94b5bfc5.chunk.js",
     "static/js/2.94b5bfc5.chunk.js.map": "/mercedes-chocolate-studio/static/js/2.94b5bfc5.chunk.js.map",
     "index.html": "/mercedes-chocolate-studio/index.html",
-    "static/css/main.5115ab74.chunk.css.map": "/mercedes-chocolate-studio/static/css/main.5115ab74.chunk.css.map",
+    "static/css/main.25258f38.chunk.css.map": "/mercedes-chocolate-studio/static/css/main.25258f38.chunk.css.map",
     "static/js/2.94b5bfc5.chunk.js.LICENSE.txt": "/mercedes-chocolate-studio/static/js/2.94b5bfc5.chunk.js.LICENSE.txt",
     "static/media/background.69c2768b.jpeg": "/mercedes-chocolate-studio/static/media/background.69c2768b.jpeg",
     "static/media/capuccino.eee68810.jpg": "/mercedes-chocolate-studio/static/media/capuccino.eee68810.jpg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.36535e5d.js",
     "static/js/2.94b5bfc5.chunk.js",
-    "static/css/main.5115ab74.chunk.css",
-    "static/js/main.03bb278f.chunk.js"
+    "static/css/main.25258f38.chunk.css",
+    "static/js/main.8b070f4c.chunk.js"
   ]
 }
