@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navigation.scss';
-import {NavLink} from 'react-router-dom';
+import {NavLink, HashRouter} from 'react-router-dom';
 // import { HashLink as Links } from "react-router-hash-link";
 import Logo from '../../Assets/logo/logo.png';
 
@@ -53,32 +53,32 @@ const Navigation = () => {
             </div>
           </button>
           <div id='myDropdown' className='dropdown-content'>
-            <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/'>
+            <NavLink exact activeClassName='active' to='/'>
               HEM
             </NavLink>
-            <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/Products'>
+            <NavLink exact activeClassName='active' to='/Products'>
               PRODUKTER
             </NavLink>
-            <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/About'>
+            <NavLink exact activeClassName='active' to='/About'>
               OM OSS
             </NavLink>
-            <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/Contact'>
+            <NavLink exact activeClassName='active' to='/Contact'>
               KONTAKT
             </NavLink>
           </div>
         </div>
 
         <div className='nav-desktop'>
-          <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/'>
+          <NavLink exact activeClassName='active' to='/'>
             HEM
           </NavLink>
-          <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/Products'>
+          <NavLink exact activeClassName='active' to='/Products'>
             PRODUKTER
           </NavLink>
-          <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/About'>
+          <NavLink exact activeClassName='active' to='/About'>
             OM OSS
           </NavLink>
-          <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/Contact'>
+          <NavLink exact activeClassName='active' to='/Contact'>
             KONTAKT
           </NavLink>
         </div>

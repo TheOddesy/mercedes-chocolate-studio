@@ -33,7 +33,7 @@ const Footer = () => {
             </a>{' '}
             |{' '}
             <a
-              href='https://www.instagram.com/atmerceurwinquist/?hl=en'
+              href='https://www.instagram.com/mercedeschocolatestudio/?hl=en'
               target='blank'
               rel='noopener'>
               <FaInstagram className='social-media-icons' />

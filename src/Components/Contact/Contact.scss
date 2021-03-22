@@ -31,13 +31,18 @@
   .contact-information {
     .contact-flex {
       display: flex;
-
       margin: 0.5rem 0;
       p {
         font-size: 1rem;
         margin: 0 0 0 0.5rem;
       }
       .contact-icons {
+        font-size: 1rem;
+      }
+      .contact-icons-insta {
+        font-size: 1.5rem;
+      }
+      .contact-icons-mail {
         font-size: 1rem;
       }
     }
@@ -69,7 +74,6 @@
       width: 50%;
       .contact-flex {
         display: flex;
-
         margin: 0.5rem 0;
         p {
           font-size: 1.1rem;
@@ -77,6 +81,9 @@
         }
         .contact-icons {
           font-size: 1.2rem;
+        }
+        .contact-icons-insta {
+          font-size: 1.4rem;
         }
       }
     }

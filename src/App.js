@@ -1,25 +1,25 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, HashRouter} from 'react-router-dom';
 import {Navigation, Footer, Main, Products, About, Contact} from './Components';
 import './App.scss';
 
 function App() {
   return (
     <div>
-      <Router>
+      <HashRouter>
         <Navigation />
         <div className='wrapper'>
           <Switch>
-            <Route exact path='/mercedes-chocolate-studio/'>
+            <Route exact path='/'>
               <Main />
             </Route>
-            <Route exact path='/mercedes-chocolate-studio/Products'>
+            <Route exact path='/Products'>
               <Products />
             </Route>
-            <Route exact path='/mercedes-chocolate-studio/About'>
+            <Route exact path='/About'>
               <About />
             </Route>
-            <Route exact path='/mercedes-chocolate-studio/Contact'>
+            <Route exact path='/Contact'>
               <Contact />
             </Route>
           </Switch>
@@ -28,7 +28,7 @@ function App() {
         <div className='sticky-footer'>
           <Footer />
         </div>
-      </Router>
+      </HashRouter>
     </div>
   );
 }

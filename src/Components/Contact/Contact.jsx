@@ -5,6 +5,8 @@ import {BiHappyBeaming} from 'react-icons/bi';
 import {HiHome} from 'react-icons/hi';
 import {ImPhone} from 'react-icons/im';
 import {IoMail} from 'react-icons/io5';
+import {RiInstagramFill} from 'react-icons/ri';
+import {MdMail} from 'react-icons/md';
 
 const Contact = () => {
   return (
@@ -65,7 +67,7 @@ const Contact = () => {
               <p>+358 (0) 40 539 6699</p>
             </div>
             <div className='contact-flex'>
-              <IoMail className='contact-icons' />
+              <MdMail className='contact-icons contact-icons-mail' />
               <p>
                 <a href='mailto:mercedeschocolatestudio@gmail.com' target='blank' rel='noopener'>
                   mercedeschocolatestudio@gmail.com
@@ -77,6 +79,17 @@ const Contact = () => {
               <p>
                 <a href='https://m.me/mu.winquist' target='blank' rel='noopener'>
                   PM till Mercedes
+                </a>
+              </p>
+            </div>
+            <div className='contact-flex'>
+              <RiInstagramFill className='contact-icons contact-icons-insta' />
+              <p>
+                <a
+                  href='https://www.instagram.com/mercedeschocolatestudio/?hl=en'
+                  target='blank'
+                  rel='noopener'>
+                  Följ oss på instagram för läckra chokladbilder.
                 </a>
               </p>
             </div>

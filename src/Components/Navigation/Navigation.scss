@@ -93,10 +93,10 @@ button > * {
     left: 0;
   }
 }
+
 .button-in-focus {
   .button-line {
     transition-duration: 0.5s;
-    background-color: $beige;
   }
   .line1 {
     transform: rotate(45deg) translateY(-50%);
@@ -112,28 +112,6 @@ button > * {
     left: 5%;
   }
 }
-
-// .drop-button:focus {
-//   .button-container {
-//     .button-line {
-//       transition-duration: 0.5s;
-//       background-color: $brown;
-//     }
-//     .line1 {
-//       transform: rotate(45deg) translateY(-50%);
-//       top: 50%;
-//       right: 5%;
-//     }
-//     .line2 {
-//       background: transparent;
-//     }
-//     .line3 {
-//       transform: rotate(-45deg) translateY(-50%);
-//       top: 50%;
-//       left: 5%;
-//     }
-//   }
-// }
 
 // ---------------------------------------------------------
 
