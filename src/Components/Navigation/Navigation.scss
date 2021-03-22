@@ -1,5 +1,10 @@
 @import '../../variables';
 
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 .navigation-container {
   background-color: $brown;
   height: 5rem;
@@ -45,7 +50,7 @@
     cursor: pointer;
   }
   &:focus {
-    background-color: $beige;
+    //background-color: $beige;
     //color: $brown;
     outline: none;
     transition: 0.5s;
@@ -61,6 +66,8 @@ button > * {
 .button-container {
   height: 50%;
   width: 80%;
+  width: 2.2rem;
+  height: 1.4rem;
   position: relative;
 
   .button-line {
@@ -73,37 +80,60 @@ button > * {
   }
   .line1 {
     top: 0;
+    left: 0;
   }
   .line2 {
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
   }
   .line3 {
     bottom: 0;
+    left: 0;
+  }
+}
+.button-in-focus {
+  .button-line {
+    transition-duration: 0.5s;
+    background-color: $beige;
+  }
+  .line1 {
+    transform: rotate(45deg) translateY(-50%);
+    top: 50%;
+    right: 5%;
+  }
+  .line2 {
+    background: transparent;
+  }
+  .line3 {
+    transform: rotate(-45deg) translateY(-50%);
+    top: 50%;
+    left: 5%;
   }
 }
 
-.drop-button:focus {
-  .button-container {
-    .button-line {
-      transition-duration: 0.5s;
-      background-color: $brown;
-    }
-    .line1 {
-      transform: rotate(45deg) translateY(-50%);
-      top: 50%;
-      right: 5%;
-    }
-    .line2 {
-      background: transparent;
-    }
-    .line3 {
-      transform: rotate(-45deg) translateY(-50%);
-      top: 50%;
-      left: 5%;
-    }
-  }
-}
+// .drop-button:focus {
+//   .button-container {
+//     .button-line {
+//       transition-duration: 0.5s;
+//       background-color: $brown;
+//     }
+//     .line1 {
+//       transform: rotate(45deg) translateY(-50%);
+//       top: 50%;
+//       right: 5%;
+//     }
+//     .line2 {
+//       background: transparent;
+//     }
+//     .line3 {
+//       transform: rotate(-45deg) translateY(-50%);
+//       top: 50%;
+//       left: 5%;
+//     }
+//   }
+// }
 
 // ---------------------------------------------------------
 
