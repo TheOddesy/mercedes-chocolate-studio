@@ -20,9 +20,8 @@ const Main = () => {
               ingredienser så är de här läckerheterna lämpliga för veganer och många till.
             </p>
             <p>
-              Ta en titt på våra{' '}
-              <Link to='/mercedes-chocolate-studio/Products'>chokladprodukter</Link> och{' '}
-              <Link to='/mercedes-chocolate-studio/Contact'>kontakta</Link> oss så hjälper vi till!
+              Ta en titt på våra <Link to='/Products'>chokladprodukter</Link> och{' '}
+              <Link to='/Contact'>kontakta</Link> oss så hjälper vi till!
             </p>
           </div>
         </div>
@@ -35,9 +34,8 @@ const Main = () => {
             ingredienser så är de här läckerheterna lämpliga för veganer och många till.
           </p>
           <p>
-            Ta en titt på våra{' '}
-            <Link to='/mercedes-chocolate-studio/Products'>chokladprodukter</Link> och{' '}
-            <Link to='/mercedes-chocolate-studio/Contact'>kontakta</Link> oss så hjälper vi till!
+            Ta en titt på våra <Link to='/Products'>chokladprodukter</Link> och{' '}
+            <Link to='/Contact'>kontakta</Link> oss så hjälper vi till!
           </p>
         </div>
       </div>

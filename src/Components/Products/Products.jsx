@@ -137,7 +137,7 @@ const Products = () => {
         <div className='product-information'>
           <p>Här är vår chokladkollektion. Är det något som ser jättegott ut?</p>
           <p>
-            <Link to='/mercedes-chocolate-studio/Contact'>Kontakta oss</Link> så hjälper vi till!
+            <Link to='/Contact'>Kontakta oss</Link> så hjälper vi till!
           </p>
         </div>
         <div className='flex-wrap'>
@@ -148,7 +148,7 @@ const Products = () => {
         <div className='product-information'>
           <p>Visst såg det gott ut? </p>
           <p>
-            <Link to='/mercedes-chocolate-studio/Contact'>Hör av dig</Link> så hjälper vi till!
+            <Link to='/Contact'>Hör av dig</Link> så hjälper vi till!
           </p>
         </div>
       </div>
