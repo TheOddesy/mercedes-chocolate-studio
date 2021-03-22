@@ -36,29 +36,76 @@
   overflow: hidden;
   padding: 0;
   color: $beige;
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s linear;
   &:hover {
     cursor: pointer;
   }
   &:focus {
     background-color: $beige;
-    color: $brown;
+    //color: $brown;
     outline: none;
     transition: 0.5s;
   }
-  .button-design {
-    height: 80%;
-    width: 80%;
-    background: red;
-  }
 }
+
+// ---------------------------------------------------------
+
 button > * {
   pointer-events: none;
 }
-/* --- --- --- ---  */
+
+.button-container {
+  height: 50%;
+  width: 80%;
+  position: relative;
+
+  .button-line {
+    height: 0.2rem;
+    width: 100%;
+    background-color: $beige;
+    border-radius: 10rem;
+    position: absolute;
+    transition-duration: 0.5s;
+  }
+  .line1 {
+    top: 0;
+  }
+  .line2 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .line3 {
+    bottom: 0;
+  }
+}
+
+.drop-button:focus {
+  .button-container {
+    .button-line {
+      transition-duration: 0.5s;
+      background-color: $brown;
+    }
+    .line1 {
+      transform: rotate(45deg) translateY(-50%);
+      top: 50%;
+      right: 5%;
+    }
+    .line2 {
+      background: transparent;
+    }
+    .line3 {
+      transform: rotate(-45deg) translateY(-50%);
+      top: 50%;
+      left: 5%;
+    }
+  }
+}
+
+// ---------------------------------------------------------
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {

@@ -3,7 +3,6 @@ import './Navigation.scss';
 import {NavLink} from 'react-router-dom';
 // import { HashLink as Links } from "react-router-hash-link";
 import Logo from '../../Assets/logo/logo.png';
-import {GoThreeBars} from 'react-icons/go';
 
 const Navigation = () => {
   /* When the user clicks on the button,
@@ -32,12 +31,13 @@ const Navigation = () => {
         <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/' className='logo'>
           <img src={Logo} alt='logo for mercedes baking studio' />
         </NavLink>
-        {/* ≡ */}
-        {/* <GoThreeBars /> */}
-        {/* <div className='button-design'></div> */}
         <div className='nav-mobile'>
           <button type='button' onClick={dropDownMenu} className='drop-button drop-button-part'>
-            <GoThreeBars />
+            <div className='button-container'>
+              <div className='button-line line1'></div>
+              <div className='button-line line2'></div>
+              <div className='button-line line3'></div>
+            </div>
           </button>
           <div id='myDropdown' className='dropdown-content'>
             <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/'>
