@@ -18,11 +18,19 @@
   height: 5vw;
   overflow: hidden;
   margin: -1px 0 0;
-
+  position: relative;
   img {
     width: 100%;
     height: auto;
     background-size: contain;
+  }
+  .brown-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.5rem;
+    height: 2.1vw;
+    background-color: $brown;
   }
 }
 

@@ -84,6 +84,7 @@ const Navigation = () => {
       </div>
       <div className='nav-wave'>
         <img src={wave} alt='chocolate wave' />
+        <div className='brown-block'></div>
       </div>
     </div>
   );
