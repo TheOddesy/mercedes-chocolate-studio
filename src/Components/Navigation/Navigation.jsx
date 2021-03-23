@@ -3,6 +3,7 @@ import './Navigation.scss';
 import {NavLink} from 'react-router-dom';
 // import { HashLink as Links } from "react-router-hash-link";
 import Logo from '../../Assets/logo/logo.png';
+import wave from '../../Assets/waves/wave.svg';
 
 const Navigation = () => {
   /* When the user clicks on the button,
@@ -39,7 +40,7 @@ const Navigation = () => {
   return (
     <div>
       <div className='navigation-container'>
-        <NavLink exact activeClassName='active' to='/mercedes-chocolate-studio/' className='logo'>
+        <NavLink exact activeClassName='active' to='/' className='logo'>
           <img src={Logo} alt='logo for mercedes baking studio' />
         </NavLink>
         <div className='nav-mobile'>
@@ -80,6 +81,9 @@ const Navigation = () => {
             KONTAKT
           </NavLink>
         </div>
+      </div>
+      <div className='nav-wave'>
+        <img src={wave} alt='chocolate wave' />
       </div>
     </div>
   );

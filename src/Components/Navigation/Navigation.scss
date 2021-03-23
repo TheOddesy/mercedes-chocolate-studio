@@ -9,8 +9,21 @@
   background-color: $brown;
   height: 5rem;
   width: 100%;
-  margin: 0 0 0 0; //put a margon-bottom -1rem for adjusting
+  margin: 0 0 0 0; //put a margin-bottom -1rem for adjusting
   position: relative;
+}
+
+.nav-wave {
+  width: 100%;
+  height: 5vw;
+  overflow: hidden;
+  margin: -1px 0 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+  }
 }
 
 // ---------------------------------------------------------
