@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navigation.scss';
-import {NavLink, HashRouter} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 // import { HashLink as Links } from "react-router-hash-link";
 import Logo from '../../Assets/logo/logo.png';
 
@@ -30,10 +30,8 @@ const Navigation = () => {
   function toggleMenuButton() {
     const element = document.getElementById('myDropdown');
     if (element.classList.contains('show')) {
-      console.log(document.getElementsByClassName('button-container'));
       document.getElementsByClassName('button-container')[0].classList.add('button-in-focus');
     } else {
-      console.log(document.getElementsByClassName('button-container'));
       document.getElementsByClassName('button-container')[0].classList.remove('button-in-focus');
     }
   }

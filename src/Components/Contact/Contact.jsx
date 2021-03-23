@@ -1,12 +1,12 @@
 import React from 'react';
 import './Contact.scss';
-import {FaFacebookMessenger} from 'react-icons/fa';
+
 import {BiHappyBeaming} from 'react-icons/bi';
 import {HiHome} from 'react-icons/hi';
 import {ImPhone} from 'react-icons/im';
-import {IoMail} from 'react-icons/io5';
-import {RiInstagramFill} from 'react-icons/ri';
 import {MdMail} from 'react-icons/md';
+import {FaFacebookMessenger} from 'react-icons/fa';
+import {RiInstagramFill} from 'react-icons/ri';
 
 const Contact = () => {
   return (
@@ -67,7 +67,7 @@ const Contact = () => {
               <p>+358 (0) 40 539 6699</p>
             </div>
             <div className='contact-flex'>
-              <MdMail className='contact-icons contact-icons-mail' />
+              <MdMail className='contact-icons' />
               <p>
                 <a href='mailto:mercedeschocolatestudio@gmail.com' target='blank' rel='noopener'>
                   mercedeschocolatestudio@gmail.com
@@ -83,7 +83,7 @@ const Contact = () => {
               </p>
             </div>
             <div className='contact-flex'>
-              <RiInstagramFill className='contact-icons contact-icons-insta' />
+              <RiInstagramFill className='contact-icons' />
               <p>
                 <a
                   href='https://www.instagram.com/mercedeschocolatestudio/?hl=en'
