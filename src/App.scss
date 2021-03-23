@@ -18,10 +18,10 @@ body {
 
   // background-color: $background;
   // background-image: url('./Assets/background/cocoa.png');
-  // background-image: url('./Assets/logo/logo-front.png');
+  // background-image: url('./Assets/logo/logof.png');
   // background-repeat: space;
-  // background-size: 50px 50px;
-  // background-blend-mode: color-dodge;
+  //background-size: 150px 150px;
+  //background-blend-mode: color-dodge;
 }
 
 a {
@@ -29,9 +29,9 @@ a {
 }
 
 .wrapper {
-  min-height: calc(100vh - 21rem);
+  min-height: calc(100vh - 21rem - 4.9vw);
   margin: 0;
-  /* Equal to height of footer 16rem + header 5 rem */
+  /* Equal to height of footer 16rem + header 5 rem + wave 5vw */
 }
 
 .sticky-footer,
