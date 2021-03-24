@@ -15,7 +15,7 @@ const Main = () => {
             <h1> Mercedes Chokladstudio </h1>
             <h2>Veganskt chokladhantverk</h2>
             <p>
-              Livstil eller nödvändighet, det spellar inget roll. Vi skapar godbitar av choklad som
+              Livstil eller nödvändighet, det spelar ingen roll. Vi skapar godbitar av choklad som
               är fria från mjölk, gluten och ägg. Med mindre mängd socker och massor med ekologiska
               ingredienser så är de här läckerheterna lämpliga för veganer och många till.
             </p>
@@ -29,7 +29,7 @@ const Main = () => {
           <h1> Mercedes Chokladstudio </h1>
           <h2>Veganskt chokladhantverk</h2>
           <p>
-            Livstil eller nödvändighet, det spellar inget roll. Vi skapar godbitar av choklad som är
+            Livstil eller nödvändighet, det spelar ingen roll. Vi skapar godbitar av choklad som är
             fria från mjölk, gluten och ägg. Med mindre mängd socker och massor med ekologiska
             ingredienser så är de här läckerheterna lämpliga för veganer och många till.
           </p>
