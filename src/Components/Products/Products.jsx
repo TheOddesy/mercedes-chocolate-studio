@@ -66,7 +66,7 @@ const products = [
   {
     id: 5,
     name: 'KARAMELLHJÄRTA',
-    price: '2st för 6.00 €',
+    price: '2st för 7.00 €',
     description: '"Mjölkchoklad" hjärta fyllt med krämig karamell och knapriga småkakor. Nötfri.',
     ingredients:
       'Ca. 60g. Glutenfri mjölmix, majsstärkelse, socker*, Carlshamn margarin, pumpafrön*, havssalt, bakpulver, dadelsirap, äppelsås*, linfrö*, kakaosmör*, kokos*, kakaomassa*, rörsocker*, kokosolja*, vanilj*, glykos, sirap*, havregrädde, kokosolja*, kokoskräm*. (*)Ekologiska ingredienser.',
@@ -108,12 +108,12 @@ const products = [
 
   {
     id: 9,
-    name: '"VIT" CHOKLADPLATTA MED JORDGUBB',
+    name: '"VIT" CHOKLAD & JORDGUBBSSYMFONI',
     price: '1st för 8.00 €',
     description:
       'Krämig "vit" choklad laddat upp med massor av frystorkade jordgubbar. Fräsch och fruktig. Nötfri.',
     ingredients:
-      'Ca. 80g. Kakaosmör*,  rörsocker*, kokos*, frystorkade jordgubbar. (*)Ekologiska ingredienser.',
+      'Ca. 80g. Kakaosmör*, rörsocker*, kokos*, glykos, vanilj*, frystorkade jordgubbar, hallon och blåbär. (*)Ekologiska ingredienser.',
     image: productImage9,
   },
 
