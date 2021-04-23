@@ -25,6 +25,7 @@ const products = [
     id: 1,
     name: 'CHOKLADPLATTA MED LAKRITS',
     price: '1st för 8.50 €',
+    priceValue: 8.5,
     description: 'Ljuvlig "mjölkchoklad" med en klick lakritskolakräm i varje hjärta. Nötfri.',
     ingredients:
       'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, havregrädde, bikarbonat, kokosolja*, kokoskräm*, rörsocker*, kokos*, vanilj*, lakritspulver, havssalt, (*)Ekologiska ingredienser.',
@@ -35,6 +36,7 @@ const products = [
     id: 2,
     name: 'CHOKLADPLATTA MED KARAMELL',
     price: '1st för 8.50 €',
+    priceValue: 8.5,
     description: 'Ljuvlig "mjölkchoklad" med en klick kolakräm i varje hjärta. Nötfri.',
     ingredients:
       'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, havregrädde, kokosolja*, kokoskräm*, havssalt,  kakaosmör*, bikarbonat, rörsocker*, kokos*,  vanilj*. (*)Ekologiska ingredienser.',
@@ -45,6 +47,7 @@ const products = [
     id: 3,
     name: 'CRUNCHY ROAD',
     price: '1st för 4.00 €',
+    priceValue: 4,
     description:
       'Vår finaste 52% "mjölkchoklad" blandad med hälsosamma eko bovete flingor, utan tillsatt socker, jätteknaprigt! Nötfri.',
     ingredients:
@@ -56,6 +59,7 @@ const products = [
     id: 4,
     name: 'CAPUCCINO',
     price: '6st för 4.00 €',
+    priceValue: 4,
     description:
       'Krämig "vit" choklad och finaste Valencia mandlar blandade med starka kaffe prickar.',
     ingredients:
@@ -67,6 +71,7 @@ const products = [
     id: 5,
     name: 'KARAMELLHJÄRTA',
     price: '2st för 7.00 €',
+    priceValue: 7,
     description: '"Mjölkchoklad" hjärta fyllt med krämig karamell och knapriga småkakor. Nötfri.',
     ingredients:
       'Ca. 60g. Glutenfri mjölmix, majsstärkelse, socker*, Carlshamn margarin, pumpafrön*, havssalt, bakpulver, dadelsirap, äppelsås*, linfrö*, kakaosmör*, kokos*, kakaomassa*, rörsocker*, kokosolja*, vanilj*, glykos, sirap*, havregrädde, kokosolja*, kokoskräm*. (*)Ekologiska ingredienser.',
@@ -77,6 +82,7 @@ const products = [
     id: 6,
     name: 'MANDEL GIANDUJA',
     price: '2st för 6.00 €',
+    priceValue: 6,
     description:
       'Finaste Valencia mandlar och två toner choklad resulterar i en mycket tillfredställande godbit.',
     ingredients:
@@ -88,6 +94,7 @@ const products = [
     id: 7,
     name: 'LAKRITSGOTTIS',
     price: '3st för 6.00 €',
+    priceValue: 6,
     description:
       'Två små chokladplattor fyllda med en härlig lakritskolakräm och rullade i lakritspulver och salmiakpulver. Nötfri.',
     ingredients:
@@ -99,6 +106,7 @@ const products = [
     id: 8,
     name: '"VIT" CHOKLADPLATTA MED LAKRITS',
     price: '1st för 5.00 €',
+    priceValue: 5,
     description:
       'Krämig "vit" choklad med mycket lakritssmak och toner av karamell. En favorit bland lakritsälskare. Innehåller mandel.',
     ingredients:
@@ -110,6 +118,7 @@ const products = [
     id: 9,
     name: '"VIT" CHOKLAD & JORDGUBBSSYMFONI',
     price: '1st för 8.00 €',
+    priceValue: 8,
     description:
       'Krämig "vit" choklad laddat upp med massor av frystorkade jordgubbar. Fräsch och fruktig. Nötfri.',
     ingredients:
@@ -130,6 +139,19 @@ const products = [
 ];
 
 const Products = () => {
+  // Everytime the page is realoaded one checks if there is anything in the local storage
+  // Othersise creates a new instance of it if its empty.
+  window.onload = function () {
+    const chocolateOrder = localStorage.getItem('chocolateOrder');
+    if (chocolateOrder) {
+    } else {
+      const productList = [];
+      // const chocolate = [{name: 'choco', price: 100}];
+      // productList.push(chocolate);
+      localStorage.setItem('ChocolateOrder', JSON.stringify(productList));
+    }
+  };
+
   return (
     <div>
       <div className='products'>

@@ -1,0 +1,129 @@
+@import '../../variables';
+
+.order-container {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  z-index: 5;
+
+  &:hover {
+    background-color: $brown;
+    cursor: pointer;
+  }
+}
+
+.order-icon {
+  font-size: 2.5rem;
+  color: $beige;
+  transition: all 0.2s;
+}
+
+// when screen is largen than 768px
+@media (min-width: $screen-breakpoint) {
+  .order-container {
+    height: 5rem;
+    width: 5rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+// ---------------------------------------------------------
+
+.order-button-container {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Dropdown Button */
+.order-button {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $brown-dark;
+  border: 2px solid $beige;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+    background-color: $brown;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.order-menu-open {
+  .order-icon {
+    transform: scale(-1, 1);
+  }
+}
+
+// ---------------------------------------------------------
+
+button > * {
+  pointer-events: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.order-content {
+  box-sizing: border-box;
+  display: none;
+  background-color: $brown;
+  width: 18rem;
+  border: 2px solid $text-light;
+  box-shadow: 0 10px 10px 5px #00000050;
+  position: absolute;
+  bottom: 6rem;
+  right: 0;
+  padding: 1rem;
+  //z-index: 10;
+}
+
+.order-content p {
+  color: $beige;
+}
+
+/* Links inside the dropdown */
+.order-content a {
+  box-sizing: border-box;
+  display: block;
+  color: $text-light;
+  padding: 1rem 0;
+  margin: 0;
+  font-size: 1.2em;
+  height: 3.5rem;
+  text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.order-content a:hover {
+  background-color: $nav-accent;
+}
+
+.order-content .active {
+  //background: #4d2116;
+  //font-style: italic;
+  font-weight: 900;
+  color: $yellow;
+}
+
+.show-order {
+  display: block;
+}
+
+// ---------------------------------------------------------

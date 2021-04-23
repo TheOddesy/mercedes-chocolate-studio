@@ -1,41 +1,42 @@
 import React from 'react';
 import './Navigation.scss';
+import Order from './Order';
+
 import {NavLink} from 'react-router-dom';
 // import { HashLink as Links } from "react-router-hash-link";
 import Logo from '../../Assets/logo/logo.png';
 import wave from '../../Assets/waves/wave.svg';
 
 const Navigation = () => {
+  // ------------------------------------------------------------------
   /* When the user clicks on the button,
       toggle between hiding and showing the dropdown content */
   function dropDownMenu() {
-    document.getElementById('myDropdown').classList.toggle('show');
+    document.getElementById('myDropdown').classList.toggle('show-menu');
     toggleMenuButton();
   }
 
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function (event) {
     if (!event.target.matches('.drop-button-part')) {
-      const dropdowns = document.getElementsByClassName('dropdown-content');
-      let i;
-      for (i = 0; i < dropdowns.length; i++) {
-        const openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-          toggleMenuButton();
-        }
+      const dropdownMenu = document.getElementsByClassName('dropdown-content')[0];
+
+      if (dropdownMenu.classList.contains('show-menu')) {
+        dropdownMenu.classList.remove('show-menu');
+        toggleMenuButton();
       }
     }
   };
 
   function toggleMenuButton() {
     const element = document.getElementById('myDropdown');
-    if (element.classList.contains('show')) {
+    if (element.classList.contains('show-menu')) {
       document.getElementsByClassName('button-container')[0].classList.add('button-in-focus');
     } else {
       document.getElementsByClassName('button-container')[0].classList.remove('button-in-focus');
     }
   }
+  // ------------------------------------------------------------------
 
   return (
     <div>
@@ -43,6 +44,7 @@ const Navigation = () => {
         <NavLink exact activeClassName='active' to='/' className='logo'>
           <img src={Logo} alt='logo for mercedes baking studio' />
         </NavLink>
+        <Order></Order>
         <div className='nav-mobile'>
           <button type='button' onClick={dropDownMenu} className='drop-button drop-button-part'>
             <div className='button-container '>
