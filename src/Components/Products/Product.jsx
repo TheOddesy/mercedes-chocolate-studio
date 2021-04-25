@@ -5,33 +5,34 @@ const Product = ({product}) => {
   // Checks if there is an intance of this type of product
   // If there is not, add one an the quantity one
   // If the is, increase the qunatity by one
-  function updateChocolateOrder() {
-    const chocolateOrder = JSON.parse(localStorage.getItem('ChocolateOrder'));
-    for (let i = 0; i <= chocolateOrder.length; i++) {
+  function updateOrder() {
+    const order = JSON.parse(localStorage.getItem('Order'));
+    for (let i = 0; i <= order.length; i++) {
       let orderName;
-      // Catches if chocolateOrder is empty
+      // Catches if order is empty
       try {
-        orderName = chocolateOrder[i].name;
+        orderName = order[i].name;
       } catch (TypeError) {}
 
       if (orderName === product.name) {
-        chocolateOrder[i].quantity += 1;
-        localStorage.setItem('ChocolateOrder', JSON.stringify(chocolateOrder));
+        order[i].quantity += 1;
+        localStorage.setItem('Order', JSON.stringify(order));
+
         return;
       }
     }
-    addNewProductinstance(chocolateOrder);
+    addNewProductinstance(order);
   }
 
-  // Add a new instance of this product to the chocolateOrder witht the quantity 1
-  function addNewProductinstance(chocolateOrder) {
+  // Add a new instance of this product to the order witht the quantity 1
+  function addNewProductinstance(order) {
     const productInfo = {
       name: product.name,
       priceValue: product.priceValue,
       quantity: 1,
     };
-    chocolateOrder.push(productInfo);
-    localStorage.setItem('ChocolateOrder', JSON.stringify(chocolateOrder));
+    order.push(productInfo);
+    localStorage.setItem('Order', JSON.stringify(order));
   }
 
   return (
@@ -53,7 +54,7 @@ const Product = ({product}) => {
               </div>
             </div>
           </div>
-          <button onClick={updateChocolateOrder} className='add-button'>
+          <button onClick={updateOrder} id='add-button' className='add-button'>
             +
           </button>
         </div>

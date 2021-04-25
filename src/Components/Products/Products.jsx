@@ -23,7 +23,7 @@ import productImage9 from '../../Assets/products/vitChokladJordgubb.jpg';
 const products = [
   {
     id: 1,
-    name: 'CHOKLADPLATTA MED LAKRITS',
+    name: 'Chokladplatta med lakrits',
     price: '1st för 8.50 €',
     priceValue: 8.5,
     description: 'Ljuvlig "mjölkchoklad" med en klick lakritskolakräm i varje hjärta. Nötfri.',
@@ -34,7 +34,7 @@ const products = [
 
   {
     id: 2,
-    name: 'CHOKLADPLATTA MED KARAMELL',
+    name: 'Chokladplatta med karamell',
     price: '1st för 8.50 €',
     priceValue: 8.5,
     description: 'Ljuvlig "mjölkchoklad" med en klick kolakräm i varje hjärta. Nötfri.',
@@ -45,7 +45,7 @@ const products = [
 
   {
     id: 3,
-    name: 'CRUNCHY ROAD',
+    name: 'Crunchy road',
     price: '1st för 4.00 €',
     priceValue: 4,
     description:
@@ -57,7 +57,7 @@ const products = [
 
   {
     id: 4,
-    name: 'CAPUCCINO',
+    name: 'Cappuccino',
     price: '6st för 4.00 €',
     priceValue: 4,
     description:
@@ -69,7 +69,7 @@ const products = [
 
   {
     id: 5,
-    name: 'KARAMELLHJÄRTA',
+    name: 'Karamellhjärta',
     price: '2st för 7.00 €',
     priceValue: 7,
     description: '"Mjölkchoklad" hjärta fyllt med krämig karamell och knapriga småkakor. Nötfri.',
@@ -80,7 +80,7 @@ const products = [
 
   {
     id: 6,
-    name: 'MANDEL GIANDUJA',
+    name: 'Mandel gianduja',
     price: '2st för 6.00 €',
     priceValue: 6,
     description:
@@ -92,7 +92,7 @@ const products = [
 
   {
     id: 7,
-    name: 'LAKRITSGOTTIS',
+    name: 'Lakritsgottis',
     price: '3st för 6.00 €',
     priceValue: 6,
     description:
@@ -104,7 +104,7 @@ const products = [
 
   {
     id: 8,
-    name: '"VIT" CHOKLADPLATTA MED LAKRITS',
+    name: '"Vit" chokladplatta med lakrits',
     price: '1st för 5.00 €',
     priceValue: 5,
     description:
@@ -116,7 +116,7 @@ const products = [
 
   {
     id: 9,
-    name: '"VIT" CHOKLAD & JORDGUBBSSYMFONI',
+    name: '"Vit" choklad & jordgubbssymfoni',
     price: '1st för 8.00 €',
     priceValue: 8,
     description:
@@ -142,13 +142,13 @@ const Products = () => {
   // Everytime the page is realoaded one checks if there is anything in the local storage
   // Othersise creates a new instance of it if its empty.
   window.onload = function () {
-    const chocolateOrder = localStorage.getItem('chocolateOrder');
-    if (chocolateOrder) {
+    const order = localStorage.getItem('Order');
+    if (order) {
     } else {
       const productList = [];
       // const chocolate = [{name: 'choco', price: 100}];
       // productList.push(chocolate);
-      localStorage.setItem('ChocolateOrder', JSON.stringify(productList));
+      localStorage.setItem('Order', JSON.stringify(productList));
     }
   };
 

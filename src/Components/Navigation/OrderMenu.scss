@@ -1,0 +1,53 @@
+@import '../../variables';
+
+.order-list {
+  color: $beige;
+}
+
+.order-list-item {
+  border: 1px solid red;
+}
+
+.order-name {
+  color: $beige;
+}
+
+.order-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-line {
+  border-bottom: 1px solid $beige;
+  width: 100%;
+  margin: 0.5rem auto;
+}
+
+.order-sum {
+  color: $beige;
+  text-align: right;
+}
+
+.order-copy {
+  color: $beige;
+  button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    padding: 0;
+    text-decoration: underline;
+    border: 0;
+    background-color: $brown;
+    color: $beige;
+    text-align: left;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      color: #ffffff;
+    }
+  }
+  p {
+    margin: 0.5rem 0 0;
+  }
+}

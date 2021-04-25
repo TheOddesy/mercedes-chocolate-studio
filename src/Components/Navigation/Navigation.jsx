@@ -44,7 +44,7 @@ const Navigation = () => {
         <NavLink exact activeClassName='active' to='/' className='logo'>
           <img src={Logo} alt='logo for mercedes baking studio' />
         </NavLink>
-        <Order></Order>
+        <Order />
         <div className='nav-mobile'>
           <button type='button' onClick={dropDownMenu} className='drop-button drop-button-part'>
             <div className='button-container '>
