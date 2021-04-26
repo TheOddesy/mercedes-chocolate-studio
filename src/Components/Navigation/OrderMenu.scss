@@ -5,16 +5,50 @@
 }
 
 .order-list-item {
-  border: 1px solid red;
-}
+  border: 0px solid red;
 
-.order-name {
-  color: $beige;
-}
+  .order-item-first-line {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.5rem;
 
-.order-price {
-  display: flex;
-  justify-content: space-between;
+    .order-trash-button {
+      box-sizing: border-box;
+      margin: 0 0.5rem 0 0;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 0.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.2rem;
+      .order-trash {
+        font-size: 0.8rem;
+        color: $beige;
+      }
+
+      &:hover {
+        border: 1px solid $beige;
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: $beige;
+        .order-trash {
+          color: $brown;
+        }
+      }
+    }
+
+    .order-name {
+      color: $beige;
+    }
+  }
+
+  .order-price {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .order-line {

@@ -5,23 +5,26 @@ import './OrderMenu.scss';
 
 import {TiPencil} from 'react-icons/ti';
 
-const orders2 = [
-  {id: 1, name: 'here'},
-  {id: 2, name: 'dont'},
-];
-
-const Order = () => {
-  let textToCopy;
-  //   let orders = [];
-  let orders = JSON.parse(localStorage.getItem('Order'));
+export default class Order extends React.Component {
+  constructor(props) {
+    super(props);
+    this.renderOrder = this.renderOrder.bind(this);
+    this.dropDownOrder = this.dropDownOrder.bind(this);
+    this.copyOrder = this.copyOrder.bind(this);
+    this.state = {
+      textToCopy: '',
+      totalSumValue: 0,
+      orders: JSON.parse(localStorage.getItem('Order')),
+    };
+  }
 
   // ORDER MENU BUTTON ---------------------------------------------------------
   /* When the user clicks on the button,
       toggle between hiding and showing the dropdown content */
-  function dropDownOrder() {
+  dropDownOrder() {
+    this.renderOrder();
     document.getElementById('myOrder').classList.toggle('show-order');
-    renderOrder();
-    toggleOrderMenu();
+    this.toggleOrderMenu();
   }
 
   // Close the dropdown menu if the user clicks outside of it
@@ -36,7 +39,7 @@ const Order = () => {
   //     }
   //   };
 
-  function toggleOrderMenu() {
+  toggleOrderMenu() {
     const element = document.getElementById('myOrder');
     if (element.classList.contains('show-order')) {
       document.getElementsByClassName('order-button')[0].classList.add('order-menu-open');
@@ -47,82 +50,86 @@ const Order = () => {
 
   // ------------------------------------------------------------------
 
-  function renderOrder() {
-    textToCopy = '';
-    const totalSum = addOrder();
-    addTotalSum(totalSum);
-    console.log(document.getElementById('myOrder'));
+  renderOrder() {
+    this.setState({orders: JSON.parse(localStorage.getItem('Order'))});
+    this.updateStates();
+    //console.log(document.getElementById('myOrder'));
   }
 
-  function addOrder() {
-    //orderListEl.innerHTML = '';
-    orders = JSON.parse(localStorage.getItem('Order'));
+  updateStates() {
+    this.setState({textToCopy: ''});
     let totalSum = 0;
-    for (let i = 0; i < orders.length; i++) {
-      totalSum += addOrderItem(orders[i]);
+    let totalText = '';
+    for (let i = 0; i < this.state.orders.length; i++) {
+      totalSum += this.updateSum(this.state.orders[i]);
+      totalText = totalText.concat(this.updateText(this.state.orders[i]));
     }
-    return totalSum;
+    const totalSumString = 'Summa: ' + totalSum + ' €';
+    totalText = totalText.concat(totalSumString);
+    this.setState({totalSumValue: totalSum});
+    this.setState({textToCopy: totalText});
   }
 
-  function addOrderItem(order) {
-    const nameString = order.name;
+  updateSum(order) {
+    return order.priceValue * order.quantity;
+  }
 
-    textToCopy = textToCopy.concat(nameString + '\n');
-
-    const totalPrice = order.priceValue * order.quantity;
+  updateText(order) {
+    let text = '';
+    const nameString = order.name + '\n';
+    text = text.concat(nameString);
 
     const priceQuantityString = order.priceValue + ' € x ' + order.quantity + ' = ';
-    textToCopy = textToCopy.concat(priceQuantityString);
+    text = text.concat(priceQuantityString);
 
-    const itemSumString = totalPrice + ' €';
-    textToCopy = textToCopy.concat(itemSumString + '\n');
+    const totalPrice = order.priceValue * order.quantity;
+    const itemSumString = totalPrice + ' €\n';
+    text = text.concat(itemSumString);
 
-    textToCopy = textToCopy.concat('------\n');
+    const line = '--------\n';
+    text = text.concat(line);
 
-    return totalPrice;
+    return text;
   }
 
-  function addTotalSum(sum, el) {
-    const sumEl = document.getElementById('order-sum');
-    const totalSumString = 'Summa: ' + sum + ' €';
-    sumEl.innerHTML = totalSumString;
-    textToCopy = textToCopy.concat(totalSumString);
-  }
-
-  function copyOrder() {
-    console.log(textToCopy);
-    navigator.clipboard.writeText(textToCopy);
+  copyOrder() {
+    console.log(this.state.textToCopy);
+    navigator.clipboard.writeText(this.state.textToCopy);
   }
 
   // ------------------------------------------------------------------
 
-  return (
-    <div>
-      <div className='order-container'>
-        <div className='order-button-container'>
-          <button type='button' onClick={dropDownOrder} className='order-button'>
-            <TiPencil className='order-icon' />
-          </button>
-          <div id='myOrder' className='order-content'>
-            <div className='order-list' id='order-list'>
-              {orders.map((order) => (
-                <OrderItem className='order-list-item' order={order} />
-              ))}
-            </div>
-            <div className='order-sum' id='order-sum'></div>
-            <div className='order-line'></div>
-            <div className='order-copy' id='order-copy'>
-              <button onClick={copyOrder}>Tryck här för att kopiera dina anteckningar.</button>
-              <p>
-                Skicka den kopiera texten via mail eller messenger så tar vi hand om din
-                beställning.
-              </p>
+  render() {
+    return (
+      <div>
+        <div className='order-container'>
+          <div className='order-button-container'>
+            <button type='button' onClick={this.dropDownOrder} className='order-button'>
+              <TiPencil className='order-icon' />
+            </button>
+            <div id='myOrder' className='order-content'>
+              <div className='order-list' id='order-list'>
+                {this.state.orders.map((order) => (
+                  <OrderItem renderOrder={this.renderOrder} order={order} />
+                ))}
+              </div>
+              <div className='order-sum' id='order-sum'>
+                Summa: {this.state.totalSumValue} €
+              </div>
+              <div className='order-line'></div>
+              <div className='order-copy' id='order-copy'>
+                <button onClick={this.copyOrder}>
+                  Tryck här för att kopiera dina anteckningar.
+                </button>
+                <p>
+                  Skicka den kopiera texten via mail eller messenger så tar vi hand om din
+                  beställning.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Order;
+    );
+  }
+}
