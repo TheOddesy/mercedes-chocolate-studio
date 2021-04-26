@@ -17,6 +17,10 @@
   transition: all 0.2s;
 }
 
+.order-icon-open {
+  transform: scale(-1, 1);
+}
+
 // when screen is largen than 768px
 @media (min-width: $screen-breakpoint) {
   .order-container {
@@ -59,12 +63,6 @@
   }
   &:focus {
     outline: none;
-  }
-}
-
-.order-menu-open {
-  .order-icon {
-    transform: scale(-1, 1);
   }
 }
 

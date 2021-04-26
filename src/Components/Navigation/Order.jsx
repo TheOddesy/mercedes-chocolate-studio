@@ -9,55 +9,36 @@ export default class Order extends React.Component {
   constructor(props) {
     super(props);
     this.renderOrder = this.renderOrder.bind(this);
-    this.dropDownOrder = this.dropDownOrder.bind(this);
     this.copyOrder = this.copyOrder.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
     this.state = {
       textToCopy: '',
       totalSumValue: 0,
-      orders: JSON.parse(localStorage.getItem('Order')),
+      orders: [],
+      showMenu: false,
     };
-  }
-
-  // ORDER MENU BUTTON ---------------------------------------------------------
-  /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-  dropDownOrder() {
-    this.renderOrder();
-    document.getElementById('myOrder').classList.toggle('show-order');
-    this.toggleOrderMenu();
-  }
-
-  // Close the dropdown menu if the user clicks outside of it
-  //   window.onclick = function (event) {
-  //     console.log('beeep');
-  //     if (!event.target.matches('.order-button')) {
-  //       const orderMenu = document.getElementsByClassName('order-content')[0];
-
-  //       if (orderMenu.classList.contains('show-order')) {
-  //         orderMenu.classList.remove('show-order');
-  //       }
-  //     }
-  //   };
-
-  toggleOrderMenu() {
-    const element = document.getElementById('myOrder');
-    if (element.classList.contains('show-order')) {
-      document.getElementsByClassName('order-button')[0].classList.add('order-menu-open');
-    } else {
-      document.getElementsByClassName('order-button')[0].classList.remove('order-menu-open');
-    }
   }
 
   // ------------------------------------------------------------------
 
+  componentDidMount() {
+    this.renderOrder();
+  }
+
+  // componentDidUpdate() {
+  //   this.renderOrder();
+  // }
+
   renderOrder() {
     this.setState({orders: JSON.parse(localStorage.getItem('Order'))});
     this.updateStates();
+    console.log('-----------------------');
+    console.log(this.state.textToCopy);
+    console.log(this.state.totalSumValue);
     //console.log(document.getElementById('myOrder'));
   }
 
   updateStates() {
-    this.setState({textToCopy: ''});
     let totalSum = 0;
     let totalText = '';
     for (let i = 0; i < this.state.orders.length; i++) {
@@ -99,34 +80,47 @@ export default class Order extends React.Component {
 
   // ------------------------------------------------------------------
 
+  toggleMenu() {
+    this.renderOrder();
+    this.setState({showMenu: !this.state.showMenu});
+    console.log(this.state.showMenu);
+    this.renderOrder();
+  }
+
+  // ------------------------------------------------------------------
+
   render() {
     return (
       <div>
         <div className='order-container'>
           <div className='order-button-container'>
-            <button type='button' onClick={this.dropDownOrder} className='order-button'>
-              <TiPencil className='order-icon' />
+            <button type='button' onClick={this.toggleMenu} className='order-button'>
+              <TiPencil
+                className={this.state.showMenu ? 'order-icon-open order-icon' : 'order-icon'}
+              />
             </button>
-            <div id='myOrder' className='order-content'>
-              <div className='order-list' id='order-list'>
-                {this.state.orders.map((order) => (
-                  <OrderItem renderOrder={this.renderOrder} order={order} />
-                ))}
+            {this.state.showMenu ? (
+              <div id='myOrder' className='order-content show-order'>
+                <div className='order-list' id='order-list'>
+                  {this.state.orders.map((order) => (
+                    <OrderItem renderOrder={this.renderOrder} order={order} />
+                  ))}
+                </div>
+                <div className='order-sum' id='order-sum'>
+                  Summa: {this.state.totalSumValue} €
+                </div>
+                <div className='order-line'></div>
+                <div className='order-copy' id='order-copy'>
+                  <button onClick={this.copyOrder}>
+                    Tryck här för att kopiera dina anteckningar.
+                  </button>
+                  <p>
+                    Skicka den kopiera texten via mail eller messenger så tar vi hand om din
+                    beställning.
+                  </p>
+                </div>
               </div>
-              <div className='order-sum' id='order-sum'>
-                Summa: {this.state.totalSumValue} €
-              </div>
-              <div className='order-line'></div>
-              <div className='order-copy' id='order-copy'>
-                <button onClick={this.copyOrder}>
-                  Tryck här för att kopiera dina anteckningar.
-                </button>
-                <p>
-                  Skicka den kopiera texten via mail eller messenger så tar vi hand om din
-                  beställning.
-                </p>
-              </div>
-            </div>
+            ) : null}
           </div>
         </div>
       </div>
