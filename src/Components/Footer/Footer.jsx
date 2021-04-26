@@ -10,20 +10,18 @@ const Footer = () => {
     <div>
       <div className='footer '>
         <div className='footer-green-product-info'>
-          <p>
-            Alla våra chokladprodukter är fria från mjölk, gluten och ägg - lämpliga för veganer.
-          </p>
+          <p>Alla våra produkter är fria från mjölk, gluten och ägg - lämpliga för veganer.</p>
         </div>
 
         <div className='footer-information'>
-          <p> Mercedes Chokladstudio</p>
+          <p> Mercedes Studio</p>
           <p>Lugn och Ro AB</p>
           <p>
             <ImPhone className='contact-fonts-phone' /> +358 40 539 6699
           </p>
-          <a href='mailto:mercedeschocolatestudio@gmail.com' target='blank' rel='noopener'>
+          <a href='mailto:mercedesstudioaland@gmail.com' target='blank' rel='noopener'>
             <IoMail className='contact-fonts-mail' />
-            mercedeschocolatestudio@gmail.com
+            mercedesstudioaland@gmail.com
           </a>
 
           <p>
@@ -33,7 +31,7 @@ const Footer = () => {
             </a>{' '}
             |{' '}
             <a
-              href='https://www.instagram.com/mercedeschocolatestudio/?hl=en'
+              href='https://www.instagram.com/mercedesstudioaland/?hl=en'
               target='blank'
               rel='noopener'>
               <FaInstagram className='social-media-icons' />

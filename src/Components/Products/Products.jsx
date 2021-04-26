@@ -23,23 +23,23 @@ import productImage9 from '../../Assets/products/vitChokladJordgubb.jpg';
 const products = [
   {
     id: 1,
-    name: 'Chokladplatta med lakrits',
+    name: '"Mjölkchoklad" med lakrits',
     price: '1st för 8.50 €',
     priceValue: 8.5,
     description: 'Ljuvlig "mjölkchoklad" med en klick lakritskolakräm i varje hjärta. Nötfri.',
     ingredients:
-      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, havregrädde, bikarbonat, kokosolja*, kokoskräm*, rörsocker*, kokos*, vanilj*, lakritspulver, havssalt, (*)Ekologiska ingredienser.',
+      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, bikarbonat, kokosolja*, kokoskräm*, rörsocker*, kokos*, vanilj*, lakritspulver, havssalt, (*)Ekologiska ingredienser.',
     image: productImage1,
   },
 
   {
     id: 2,
-    name: 'Chokladplatta med karamell',
+    name: '"Mjölkchoklad" med karamell',
     price: '1st för 8.50 €',
     priceValue: 8.5,
     description: 'Ljuvlig "mjölkchoklad" med en klick kolakräm i varje hjärta. Nötfri.',
     ingredients:
-      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, havregrädde, kokosolja*, kokoskräm*, havssalt,  kakaosmör*, bikarbonat, rörsocker*, kokos*,  vanilj*. (*)Ekologiska ingredienser.',
+      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, kokosolja*, kokoskräm*, havssalt,  kakaosmör*, bikarbonat, rörsocker*, kokos*,  vanilj*. (*)Ekologiska ingredienser.',
     image: productImage1,
   },
 
@@ -49,9 +49,9 @@ const products = [
     price: '1st för 4.00 €',
     priceValue: 4,
     description:
-      'Vår finaste 52% "mjölkchoklad" blandad med hälsosamma eko bovete flingor, utan tillsatt socker, jätteknaprigt! Nötfri.',
+      'Vår finaste 52% "mjölkchoklad" blandad med hälsosamma eko bovete flingor, jätteknaprigt! Nötfri.',
     ingredients:
-      'Ca. 50g. Kakaomassa*, kakaosmör*, kokos*, rörsocker*, bovete flingor, utan tillsatt socker. (*)Ekologiska ingredienser.',
+      'Ca. 50g. Kakaomassa*, kakaosmör*, kokos*, rörsocker*, bovete flingor*. (*)Ekologiska ingredienser.',
     image: productImage3,
   },
 
@@ -63,7 +63,7 @@ const products = [
     description:
       'Krämig "vit" choklad och finaste Valencia mandlar blandade med starka kaffe prickar.',
     ingredients:
-      'Ca. 40g. Mandel*, socker*, kakaosmör*, kakaomassa*, glykos, vanilj*, kokos*, rörsocker*, sojalecitin, risstärkelse*, solroslecitin*, kaffe, bikarbonat, salt. kan innehålla spår av hasselnötter. (*)Ekologiska ingredienser.',
+      'Ca. 40g. Mandel*, socker*, kakaosmör*, vanilj*, kokos*, rörsocker*, kaffe, bikarbonat, havssalt. (*)Ekologiska ingredienser.',
     image: productImage4,
   },
 
@@ -74,7 +74,7 @@ const products = [
     priceValue: 7,
     description: '"Mjölkchoklad" hjärta fyllt med krämig karamell och knapriga småkakor. Nötfri.',
     ingredients:
-      'Ca. 60g. Glutenfri mjölmix, majsstärkelse, socker*, Carlshamn margarin, pumpafrön*, havssalt, bakpulver, dadelsirap, äppelsås*, linfrö*, kakaosmör*, kokos*, kakaomassa*, rörsocker*, kokosolja*, vanilj*, glykos, sirap*, havregrädde, kokosolja*, kokoskräm*. (*)Ekologiska ingredienser.',
+      'Ca. 60g. Glutenfri mjölmix, majsstärkelse, socker*, Carlshamn margarin, pumpafrön*, havssalt, bakpulver, dadelsirap, äppelsås*, linfrö*, kakaosmör*, kokos*, kakaomassa*, rörsocker*, kokosolja*, vanilj*, glykos, sirap*, kokoskräm*. (*)Ekologiska ingredienser.',
     image: productImage5,
   },
 
@@ -86,7 +86,7 @@ const products = [
     description:
       'Finaste Valencia mandlar och två toner choklad resulterar i en mycket tillfredställande godbit.',
     ingredients:
-      'Ca. 60g. Mandel*, socker*, sirap*, kakaosmör*, kakaomassa*, glykos, vanilj*, salt, kokos*, rörsocker*, risstärkelse*, solroslecitin*. kan innehålla spår av hasselnötter. (*)Ekologiska ingredienser.',
+      'Ca. 60g. Mandel*, socker*, sirap*, kakaomassa*, kakaosmör*, glykos, vanilj*, havssalt, kokos*, rörsocker*, risstärkelse*, solroslecitin*. kan innehålla spår av hasselnötter. (*)Ekologiska ingredienser.',
     image: productImage6,
   },
 
@@ -98,19 +98,19 @@ const products = [
     description:
       'Två små chokladplattor fyllda med en härlig lakritskolakräm och rullade i lakritspulver och salmiakpulver. Nötfri.',
     ingredients:
-      'Ca. 60g. Kakaomassa*, kakaosmör*, lakritspulver, socker*, glykos, sirap*, kokoskräm*, havregrädde, kokosolja*, bikarbonat, havssalt, rörsocker*, kokos*, salmiakpulver, vanilj*. (*)Ekologiska ingredienser.',
+      'Ca. 60g. Kakaomassa*, kakaosmör*, lakritspulver, socker*, glykos, sirap*, kokoskräm*, kokosolja*, bikarbonat, havssalt, rörsocker*, kokos*, salmiakpulver, vanilj*. (*)Ekologiska ingredienser.',
     image: productImage7,
   },
 
   {
     id: 8,
-    name: '"Vit" chokladplatta med lakrits',
+    name: '"Vit" choklad med lakrits',
     price: '1st för 5.00 €',
     priceValue: 5,
     description:
       'Krämig "vit" choklad med mycket lakritssmak och toner av karamell. En favorit bland lakritsälskare. Innehåller mandel.',
     ingredients:
-      'Ca. 50g. Kakaosmör*, lakritspulver*, rörsocker*, kokos*, kokosolja*, bikarbonat, havssalt, lakritsgranulat, salmiakpulver, mandel. (*)Ekologiska ingredienser.',
+      'Ca. 50g. Kakaosmör*, lakritspulver, rörsocker*, kokos*, bikarbonat, havssalt, lakritsgranulat, mandel. (*)Ekologiska ingredienser.',
     image: productImage8,
   },
 
@@ -157,7 +157,7 @@ const Products = () => {
       <div className='products'>
         <h1>Våra produkter</h1>
         <div className='product-information'>
-          <p>Här är vår chokladkollektion. Är det något som ser jättegott ut?</p>
+          <p>Här är vår kollektion. Är det något som ser jättegott ut?</p>
           <p>
             <Link to='/Contact'>Kontakta oss</Link> så hjälper vi till!
           </p>

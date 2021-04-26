@@ -18,7 +18,7 @@ const Contact = () => {
               <h2>Beställningar</h2>
               <p>
                 Vill du beställa något? Skriv ett{' '}
-                <a href='mailto:mercedeschocolatestudio@gmail.com' target='blank' rel='noopener'>
+                <a href='mailto:mercedesstudioaland@gmail.com' target='blank' rel='noopener'>
                   mail
                 </a>{' '}
                 eller varför inte direkt på{' '}
@@ -26,7 +26,9 @@ const Contact = () => {
                   facebook
                 </a>
                 ? Vi svarar vanligtvis inom en dag. Då kan vi komma överens om betalsätt och vart
-                den goda chokladen skall levereras. Var inte blyg!
+                den goda chokladen skall levereras. Var inte blyg! <br />
+                <br />
+                Vi bjuder på frakten på beställningar över 20 €.
               </p>
             </div>
 
@@ -34,7 +36,7 @@ const Contact = () => {
               <h2>Beställningar till företag</h2>
               <p>
                 Vi kan också uppfylla större beställningar. Kontaka oss via{' '}
-                <a href='mailto:mercedeschocolatestudio@gmail.com' target='blank' rel='noopener'>
+                <a href='mailto:mercedesstudioaland@gmail.com' target='blank' rel='noopener'>
                   mail
                 </a>{' '}
                 eller{' '}
@@ -50,7 +52,7 @@ const Contact = () => {
             <h2>Kontaktinformation</h2>
             <div className='contact-flex'>
               <BiHappyBeaming className='contact-icons' />
-              <p>Mercedes Chokladstudio | Lugn och Ro AB</p>
+              <p>Mercedes Studio | Lugn och Ro AB</p>
             </div>
             <div className='contact-flex'>
               <HiHome className='contact-icons' />
@@ -69,8 +71,8 @@ const Contact = () => {
             <div className='contact-flex'>
               <MdMail className='contact-icons' />
               <p>
-                <a href='mailto:mercedeschocolatestudio@gmail.com' target='blank' rel='noopener'>
-                  mercedeschocolatestudio@gmail.com
+                <a href='mailto:mercedesstudioaland@gmail.com' target='blank' rel='noopener'>
+                  mercedesstudioaland@gmail.com
                 </a>
               </p>
             </div>
@@ -86,10 +88,10 @@ const Contact = () => {
               <RiInstagramFill className='contact-icons' />
               <p>
                 <a
-                  href='https://www.instagram.com/mercedeschocolatestudio/?hl=en'
+                  href='https://www.instagram.com/mercedesstudioaland/?hl=en'
                   target='blank'
                   rel='noopener'>
-                  Följ oss på instagram för läckra chokladbilder.
+                  Följ oss på instagram för läckra bilder.
                 </a>
               </p>
             </div>

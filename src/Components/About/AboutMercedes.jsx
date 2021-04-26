@@ -18,23 +18,10 @@ const AboutMercedes = () => {
           Efter att en tid ha levt i olika världsdelar flyttade de tillsammans till Åland för att
           förverkliga sina gemensamma drömmar.
         </p>
-        <h2>Kreativitet i choklad </h2>
-        <p>
-          Under många år tillverkades de handgjorda chokladprodukterna av högsta kvalité på Eckerö i
-          det anrika Post & tullhuset, till glädje för många lokala och internationella gäster. Våra
-          chokladpraliner blev kända och vi fick flera internationella priser plus att vi fick
-          möjligheten att presentera vår choklad vid Salon du Chocolat i Tokyo 2017-2020. Men
-          tiderna förändras liksom vår ålder och omständigheterna. I början av 2019 sålde vi
-          Mercedes Chocolaterie till lokala krafter som nu fortsätter med våra recept och sina egna,
-          nu i egen regi.
-        </p>
         <h2>Tiden nu</h2>
         <p>
-          Coronatiden gjorde att vi stannade hemma och utvärderade våra möjligheter. Då började jag
-          fundera. Kanske min resa med choklad inte var färdig och all kunskap och erfarenhet jag
-          hade samlat genom åren skulle hjälpa mig att hitta vägen för att fortsätta med de
-          spännande råvaran som hade så mycket att ge. Jag ville fortsätta min kakaoresa, men hur?
-          Tiden gav tydliga råd.
+          Efter många år av chokladtillverkning fortsätter Mercedes sin kakoresa, men hur? Tiden gav
+          tydliga råd.
         </p>
 
         <ul>
@@ -54,9 +41,9 @@ const AboutMercedes = () => {
           <li>Viktigaste av allt är ändå att det skall smaka gott. Jättegott! </li>
         </ul>
         <p>
-          Resultatet blev nu helt växtbaserade chokladprodukter som så väl veganer som de som
-          föredrar eller behöver gluten-, mjölk- och äggfria produkter kan njuta av. Detta
-          tillsammans med alla de andra som kanske vill göra lite gott för miljön.{' '}
+          Resultatet blev nu helt växtbaserade produkter som så väl veganer som de som föredrar
+          eller behöver gluten-, mjölk- och äggfria produkter kan njuta av. Detta tillsammans med
+          alla de andra som kanske vill göra lite gott för miljön.{' '}
         </p>
         <p>
           Hoppas de blir just dina nya favoriter <BiHappyBeaming className='mercedes-icon' />{' '}
