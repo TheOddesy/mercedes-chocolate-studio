@@ -7,7 +7,7 @@ import {NavLink} from 'react-router-dom';
 import Logo from '../../Assets/logo/logo.png';
 import wave from '../../Assets/waves/wave.svg';
 
-const Navigation = () => {
+const Navigation = (props) => {
   // ------------------------------------------------------------------
   /* When the user clicks on the button,
       toggle between hiding and showing the dropdown content */
@@ -44,7 +44,7 @@ const Navigation = () => {
         <NavLink exact activeClassName='active' to='/' className='logo'>
           <img src={Logo} alt='logo for mercedes baking studio' />
         </NavLink>
-        <Order />
+        <Order updateOrders={props.updateOrders} orders={props.orders} />
         <div className='nav-mobile'>
           <button type='button' onClick={dropDownMenu} className='drop-button drop-button-part'>
             <div className='button-container '>

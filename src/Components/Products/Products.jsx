@@ -138,7 +138,7 @@ const products = [
   // },
 ];
 
-const Products = () => {
+const Products = (props) => {
   // Everytime the page is realoaded one checks if there is anything in the local storage
   // Othersise creates a new instance of it if its empty.
   window.onload = function () {
@@ -164,7 +164,7 @@ const Products = () => {
         </div>
         <div className='flex-wrap'>
           {products.map((product) => (
-            <Product product={product} />
+            <Product product={product} updateOrders={props.updateOrders} />
           ))}
         </div>
         <div className='product-information'>

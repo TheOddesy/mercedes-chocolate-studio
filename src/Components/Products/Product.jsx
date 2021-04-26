@@ -1,7 +1,7 @@
 import React from 'react';
 import './Product.scss';
 
-const Product = ({product}) => {
+const Product = ({product, updateOrders}) => {
   // Checks if there is an intance of this type of product
   // If there is not, add one an the quantity one
   // If the is, increase the qunatity by one
@@ -17,11 +17,13 @@ const Product = ({product}) => {
       if (orderName === product.name) {
         order[i].quantity += 1;
         localStorage.setItem('Order', JSON.stringify(order));
-
+        updateOrders(order);
         return;
       }
     }
+
     addNewProductinstance(order);
+    updateOrders(order);
   }
 
   // Add a new instance of this product to the order witht the quantity 1
