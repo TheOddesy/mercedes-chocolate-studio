@@ -145,7 +145,7 @@ const products = [
     id: 11,
     name: '"Mjölkchoklad" med mint',
     price: '1st för 5.00 €',
-    priceValue: 8,
+    priceValue: 5,
     description: 'Vår krämiga "mjölkchoklad" med en ljuvig mint fyllning.',
     ingredients:
       'Ca. 40g. Kakaomassa, kakaosmör*, rörsocker*, kokos*, vanilj*, invertsocker, mintolja. (*)Ekologiska ingredienser.',
@@ -156,7 +156,7 @@ const products = [
     id: 12,
     name: 'Matcha-Latte',
     price: '3st för 9.50 €',
-    priceValue: 8,
+    priceValue: 9.5,
     description:
       'Matcha är ett japanskt pulver som mals av gröna teblad. Gör så här: lägg en halva av vår Matcha-latte i en kopp. Sätt den i micron ca. 1 min. Häll upp 1 dl kokande vatten och 1 dl av din favorit varm “mjölk”. Rör om.',
     ingredients:
