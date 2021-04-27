@@ -44,12 +44,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-duration: 0.2s;
     padding: 0;
     &:hover {
       cursor: pointer;
       font-size: 3rem;
-      transition-duration: 0.2s;
     }
     &:active {
       background-color: $beige;
@@ -64,7 +62,6 @@
   }
 
   .product-information-wrapper {
-    border: 1px solid $brown;
     position: absolute;
     bottom: 0;
     left: 50%;

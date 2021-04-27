@@ -67,18 +67,22 @@
   button {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
-    padding: 0;
-    text-decoration: underline;
-    border: 0;
-    background-color: $brown;
-    color: $beige;
-    text-align: left;
+    padding: 0.3rem;
+    text-decoration: none;
+    border: 1px solid $beige;
+    border-radius: 3rem;
+    color: $brown;
+    background-color: $beige;
+    text-align: center;
+    width: 100%;
 
     &:hover {
       cursor: pointer;
+      text-decoration: underline;
     }
     &:active {
-      color: #ffffff;
+      background-color: $brown;
+      color: $beige;
     }
   }
   p {

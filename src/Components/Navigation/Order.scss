@@ -57,9 +57,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: 0.2s;
   &:hover {
     cursor: pointer;
     background-color: $brown;
+    background-color: $beige;
+
+    .order-icon {
+      color: $brown-dark;
+    }
   }
   &:focus {
     outline: none;
@@ -98,3 +104,13 @@ button > * {
 }
 
 // ---------------------------------------------------------
+
+.order-copy {
+  a {
+    color: $beige;
+    text-decoration: underline;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

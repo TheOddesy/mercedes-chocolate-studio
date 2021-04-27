@@ -2,6 +2,7 @@ import React from 'react';
 import OrderItem from './OrderItem';
 import './Order.scss';
 import './OrderMenu.scss';
+import {NavLink} from 'react-router-dom';
 
 import {TiPencil} from 'react-icons/ti';
 
@@ -67,17 +68,33 @@ export default class Order extends React.Component {
                     <OrderItem key={i} renderOrder={this.renderOrder} order={order} />
                   ))}
                 </div>
+
                 <div className='order-sum' id='order-sum'>
                   Summa: {sum} €
                 </div>
                 <div className='order-line'></div>
                 <div className='order-copy' id='order-copy'>
                   <button onClick={() => copyOrder(copyText)}>
-                    Tryck här för att kopiera dina anteckningar.
+                    Tryck här för att kopiera <br></br> dina anteckningar.
                   </button>
                   <p>
-                    Skicka den kopiera texten via mail eller messenger så tar vi hand om din
-                    beställning.
+                    Skicka den kopiera texten via{' '}
+                    <a href='mailto:mercedesstudioaland@gmail.com' target='blank' rel='noopener'>
+                      mail
+                    </a>{' '}
+                    eller{' '}
+                    <a href='https://m.me/mu.winquist' target='blank' rel='noopener'>
+                      messenger
+                    </a>{' '}
+                    så tar vi hand om din beställning.
+                  </p>
+                  <div className='order-line'></div>
+                  <p>
+                    Om det är tomt i dina anteckningar så kan du gå till{' '}
+                    <NavLink exact activeClassName='active' to='/Products'>
+                      produkter
+                    </NavLink>
+                    {'.'}
                   </p>
                 </div>
               </div>
@@ -109,5 +126,5 @@ function updateText(order) {
 
 function copyOrder(textToCopy) {
   navigator.clipboard.writeText(textToCopy);
-  console.log(textToCopy);
+  //console.log(textToCopy);
 }

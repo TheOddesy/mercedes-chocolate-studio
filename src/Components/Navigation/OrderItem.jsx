@@ -4,8 +4,7 @@ import {FaTrashAlt} from 'react-icons/fa';
 
 const OrderItem = ({renderOrder, order}) => {
   //get item, remove the item from localstorage, set it back
-  // set order-list-item innerHTML to ""
-  // render order
+  // Call on render order to rerender the whole order after removing
   function removeThisItem() {
     const orderToUpdate = JSON.parse(localStorage.getItem('Order'));
 
