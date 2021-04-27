@@ -1,34 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.51caaa18.chunk.css",
-    "main.js": "/static/js/main.22058b6f.chunk.js",
-    "main.js.map": "/static/js/main.22058b6f.chunk.js.map",
+    "main.css": "/static/css/main.154a627d.chunk.css",
+    "main.js": "/static/js/main.bec2e3fb.chunk.js",
+    "main.js.map": "/static/js/main.bec2e3fb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.014f947d.js",
     "runtime-main.js.map": "/static/js/runtime-main.014f947d.js.map",
-    "static/js/2.cb5f3ac1.chunk.js": "/static/js/2.cb5f3ac1.chunk.js",
-    "static/js/2.cb5f3ac1.chunk.js.map": "/static/js/2.cb5f3ac1.chunk.js.map",
+    "static/js/2.bbc6801c.chunk.js": "/static/js/2.bbc6801c.chunk.js",
+    "static/js/2.bbc6801c.chunk.js.map": "/static/js/2.bbc6801c.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.51caaa18.chunk.css.map": "/static/css/main.51caaa18.chunk.css.map",
-    "static/js/2.cb5f3ac1.chunk.js.LICENSE.txt": "/static/js/2.cb5f3ac1.chunk.js.LICENSE.txt",
+    "static/css/main.154a627d.chunk.css.map": "/static/css/main.154a627d.chunk.css.map",
+    "static/js/2.bbc6801c.chunk.js.LICENSE.txt": "/static/js/2.bbc6801c.chunk.js.LICENSE.txt",
     "static/media/background.69c2768b.jpeg": "/static/media/background.69c2768b.jpeg",
     "static/media/capuccino.eee68810.jpg": "/static/media/capuccino.eee68810.jpg",
     "static/media/crunchyRoad.d8b08372.jpg": "/static/media/crunchyRoad.d8b08372.jpg",
     "static/media/garden.42362997.jpeg": "/static/media/garden.42362997.jpeg",
     "static/media/karamellhjärta.278ee4e7.jpg": "/static/media/karamellhjärta.278ee4e7.jpg",
     "static/media/lakritsgotties.a62213f2.jpg": "/static/media/lakritsgotties.a62213f2.jpg",
-    "static/media/logo.0912dccf.png": "/static/media/logo.0912dccf.png",
+    "static/media/logo.95bd7cbf.png": "/static/media/logo.95bd7cbf.png",
     "static/media/mandelGianduja.f8b69961.jpg": "/static/media/mandelGianduja.f8b69961.jpg",
+    "static/media/matchaLatte.74c4da35.jpg": "/static/media/matchaLatte.74c4da35.jpg",
     "static/media/mercedes.639de478.jpg": "/static/media/mercedes.639de478.jpg",
+    "static/media/mjolkchokladMint.d760be6e.jpg": "/static/media/mjolkchokladMint.d760be6e.jpg",
     "static/media/peter.b869627f.jpg": "/static/media/peter.b869627f.jpg",
     "static/media/platta.4340ad8c.jpg": "/static/media/platta.4340ad8c.jpg",
+    "static/media/polvorones.c46d916a.jpg": "/static/media/polvorones.c46d916a.jpg",
     "static/media/vitChokladJordgubb.46abbc4c.jpg": "/static/media/vitChokladJordgubb.46abbc4c.jpg",
     "static/media/vitChokladLakrits.9c4ec9ea.jpg": "/static/media/vitChokladLakrits.9c4ec9ea.jpg",
     "static/media/wave.cb99a988.svg": "/static/media/wave.cb99a988.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.014f947d.js",
-    "static/js/2.cb5f3ac1.chunk.js",
-    "static/css/main.51caaa18.chunk.css",
-    "static/js/main.22058b6f.chunk.js"
+    "static/js/2.bbc6801c.chunk.js",
+    "static/css/main.154a627d.chunk.css",
+    "static/js/main.bec2e3fb.chunk.js"
   ]
 }
