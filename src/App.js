@@ -4,6 +4,18 @@ import {Navigation, Footer, Main, Products, About, Contact} from './Components';
 import './App.scss';
 
 function App() {
+  // Everytime the page is realoaded one checks if there is anything in the local storage
+  // Othersise creates a new instance of it if its empty.
+  function onStartUp() {
+    const order = JSON.parse(localStorage.getItem('Order'));
+    if (order) {
+    } else {
+      const productList = [];
+      localStorage.setItem('Order', JSON.stringify(productList));
+    }
+  }
+  onStartUp();
+
   const initialOrders = JSON.parse(localStorage.getItem('Order'));
   const [orders, setOrders] = useState(initialOrders);
 
