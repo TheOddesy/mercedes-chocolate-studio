@@ -15,9 +15,10 @@ const Main = () => {
             <h1> Mercedes Studio </h1>
             <h2>Glutenfritt & veganskt mathantverk</h2>
             <p>
-              Livstil eller nödvändighet, det spelar ingen roll. Vi skapar godbitar av choklad som
-              är fria från mjölk, gluten och ägg. Med mindre mängd socker och massor med ekologiska
-              ingredienser så är de här läckerheterna lämpliga för veganer och många till.
+              Livstil eller nödvändighet, det spelar ingen roll. Vi skapar bland annat godbitar av
+              choklad som är fria från mjölk, gluten och ägg. Med mindre mängd socker och massor med
+              ekologiska ingredienser så är de här läckerheterna lämpliga för veganer och många
+              till.
             </p>
             <p>
               Ta en titt på våra <Link to='/Products'>produkter</Link> och{' '}
@@ -29,9 +30,9 @@ const Main = () => {
           <h1> Mercedes Studio </h1>
           <h2>Glutenfritt & veganskt mathantverk</h2>
           <p>
-            Livstil eller nödvändighet, det spelar ingen roll. Vi skapar godbitar av choklad som är
-            fria från mjölk, gluten och ägg. Med mindre mängd socker och massor med ekologiska
-            ingredienser så är de här läckerheterna lämpliga för veganer och många till.
+            Livstil eller nödvändighet, det spelar ingen roll. Vi skapar bland annat godbitar av
+            choklad som är fria från mjölk, gluten och ägg. Med mindre mängd socker och massor med
+            ekologiska ingredienser så är de här läckerheterna lämpliga för veganer och många till.
           </p>
           <p>
             Ta en titt på våra <Link to='/Products'>produkter</Link> och{' '}
