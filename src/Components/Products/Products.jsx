@@ -19,6 +19,9 @@ import productImage6 from '../../Assets/products/mandelGianduja.jpg';
 import productImage7 from '../../Assets/products/lakritsgotties.jpg';
 import productImage8 from '../../Assets/products/vitChokladLakrits.jpg';
 import productImage9 from '../../Assets/products/vitChokladJordgubb.jpg';
+import productImage10 from '../../Assets/products/polvorones.jpg';
+import productImage11 from '../../Assets/products/mjolkchokladMint.jpg';
+import productImage12 from '../../Assets/products/matchaLatte.jpg';
 
 const products = [
   {
@@ -126,16 +129,40 @@ const products = [
     image: productImage9,
   },
 
-  // {
-  //   id: 10,
-  //   name: 'POLVORONES',
-  //   price: '4st för 3.50 €',
-  //   description:
-  //     'En mjuk och mycket smulig shortbread från Spanien. Våra polvorones är baserade på mandel, olivolja och krossade kakaobönor.',
-  //   ingredients:
-  //     'Ca. 80g. Mandel*, glutenfri mjölmix, bovetemjöl*, socker*, olivolja, kanel, havssalt, krossade kakaobönor*. (*)Ekologiska ingredienser.',
-  //   image: productImage1,
-  // },
+  {
+    id: 10,
+    name: 'Polvorones',
+    price: '4st för 4.00 €',
+    priceValue: 4,
+    description:
+      'Från polvo, det spanska ordet för pulver. Det är en mjuk och mycket smulig shortbread från Spanien. Våra polvorones är baserade på mandel, olivolja och krossade kakaobönor.',
+    ingredients:
+      'Ca. 80g. Mandel, glutenfri mjölmix, bovetemjöl*, socker*, olivolja, kanel, havssalt, krossade kakaobönor*. (*)Ekologiska ingredienser.',
+    image: productImage10,
+  },
+
+  {
+    id: 11,
+    name: '"Mjölkchoklad" med mint',
+    price: '1st för 5.00 €',
+    priceValue: 8,
+    description: 'Vår krämiga "mjölkchoklad" med en ljuvig mint fyllning.',
+    ingredients:
+      'Ca. 40g. Kakaomassa, kakaosmör*, rörsocker*, kokos*, vanilj*, invertsocker, mintolja. (*)Ekologiska ingredienser.',
+    image: productImage11,
+  },
+
+  {
+    id: 12,
+    name: 'Matcha-Latte',
+    price: '3st för 9.60 €',
+    priceValue: 8,
+    description:
+      'Matcha är ett japanskt pulver som mals av gröna teblad. Gör så här: lägg en halva av vår Matcha-latte i en kopp. Sätt den i micron ca. 1 min. Häll upp 1 dl kokande vatten och 1 dl av din favorit varm “mjölk”. Rör om.',
+    ingredients:
+      'Ca. 84g. Kakaosmör*, rörsocker*, kokos*, matchapulver, kanel*, gurkmeja*, vanilj*. (*)Ekologiska ingredienser.',
+    image: productImage12,
+  },
 ];
 
 const Products = (props) => {
