@@ -1,6 +1,8 @@
 import React from 'react';
 import './Product.scss';
 
+import {ImPlus} from 'react-icons/im';
+
 const Product = ({product, updateOrders}) => {
   // Checks if there is an intance of this type of product
   // If there is not, add one an the quantity one
@@ -57,7 +59,7 @@ const Product = ({product, updateOrders}) => {
             </div>
           </div>
           <button onClick={updateOrder} id='add-button' className='add-button'>
-            +
+            <ImPlus />
           </button>
         </div>
       </div>
