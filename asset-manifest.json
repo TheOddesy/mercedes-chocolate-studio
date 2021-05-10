@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.c1f5f375.chunk.css",
-    "main.js": "/static/js/main.9b49c906.chunk.js",
-    "main.js.map": "/static/js/main.9b49c906.chunk.js.map",
+    "main.css": "/static/css/main.a6910c2e.chunk.css",
+    "main.js": "/static/js/main.1d94b29a.chunk.js",
+    "main.js.map": "/static/js/main.1d94b29a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.014f947d.js",
     "runtime-main.js.map": "/static/js/runtime-main.014f947d.js.map",
     "static/js/2.2048f469.chunk.js": "/static/js/2.2048f469.chunk.js",
     "static/js/2.2048f469.chunk.js.map": "/static/js/2.2048f469.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c1f5f375.chunk.css.map": "/static/css/main.c1f5f375.chunk.css.map",
+    "static/css/main.a6910c2e.chunk.css.map": "/static/css/main.a6910c2e.chunk.css.map",
     "static/js/2.2048f469.chunk.js.LICENSE.txt": "/static/js/2.2048f469.chunk.js.LICENSE.txt",
     "static/media/background.69c2768b.jpeg": "/static/media/background.69c2768b.jpeg",
     "static/media/capuccino.eee68810.jpg": "/static/media/capuccino.eee68810.jpg",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.014f947d.js",
     "static/js/2.2048f469.chunk.js",
-    "static/css/main.c1f5f375.chunk.css",
-    "static/js/main.9b49c906.chunk.js"
+    "static/css/main.a6910c2e.chunk.css",
+    "static/js/main.1d94b29a.chunk.js"
   ]
 }
