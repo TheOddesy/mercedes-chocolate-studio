@@ -51,11 +51,13 @@ export default class Order extends React.Component {
   render() {
     const sum = this.props.orders.reduce((acc, o) => acc + o.priceValue * o.quantity, 0);
     const copyText = this.props.orders.map(updateText).join('') + 'Summa: ' + sum + ' €';
+    const orderCounter = this.props.orders.length;
 
     return (
       <div>
         <div className='order-container'>
           <div className='order-button-container'>
+            <div className='order-counter'>{orderCounter}</div>
             <button type='button' onClick={this.toggleMenu} className='order-button'>
               <TiPencil
                 className={this.state.showMenu ? 'order-icon-open order-icon' : 'order-icon'}

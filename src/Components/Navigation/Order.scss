@@ -41,6 +41,23 @@
   height: 100%;
 }
 
+.order-counter {
+  position: absolute;
+  bottom: -0.5rem;
+  right: -0.5rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 2px solid $beige;
+  background-color: $red;
+  color: $beige;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
 /* Dropdown Button */
 .order-button {
   box-sizing: border-box;
