@@ -66,7 +66,7 @@ const products = [
     description:
       'Krämig "vit" choklad och finaste Valencia mandlar blandade med starka kaffe prickar.',
     ingredients:
-      'Ca. 40g. Mandel*, socker*, kakaosmör*, vanilj*, kokos*, rörsocker*, kaffe, bikarbonat, havssalt. (*)Ekologiska ingredienser.',
+      'Ca. 30g. Mandel*, socker*, kakaosmör*, vanilj*, kokos*, rörsocker*, kaffe, bikarbonat, havssalt. (*)Ekologiska ingredienser.',
     image: productImage4,
   },
 
