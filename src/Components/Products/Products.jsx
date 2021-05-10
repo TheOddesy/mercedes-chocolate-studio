@@ -31,7 +31,7 @@ const products = [
     priceValue: 8.5,
     description: 'Ljuvlig "mjölkchoklad" med en klick lakritskolakräm i varje hjärta. Nötfri.',
     ingredients:
-      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, bikarbonat, kokosolja*, kokoskräm*, rörsocker*, kokos*, vanilj*, lakritspulver, havssalt, (*)Ekologiska ingredienser.',
+      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, matsoda, kokosolja*, kokoskräm*, rörsocker*, kokos*, vanilj*, lakritspulver, havssalt, (*)Ekologiska ingredienser.',
     image: productImage1,
   },
 
@@ -42,7 +42,7 @@ const products = [
     priceValue: 8.5,
     description: 'Ljuvlig "mjölkchoklad" med en klick kolakräm i varje hjärta. Nötfri.',
     ingredients:
-      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, kokosolja*, kokoskräm*, havssalt,  kakaosmör*, bikarbonat, rörsocker*, kokos*,  vanilj*. (*)Ekologiska ingredienser.',
+      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, kokosolja*, kokoskräm*, havssalt,  kakaosmör*, matsoda, rörsocker*, kokos*,  vanilj*. (*)Ekologiska ingredienser.',
     image: productImage1,
   },
 
@@ -66,7 +66,7 @@ const products = [
     description:
       'Krämig "vit" choklad och finaste Valencia mandlar blandade med starka kaffe prickar.',
     ingredients:
-      'Ca. 30g. Mandel*, socker*, kakaosmör*, vanilj*, kokos*, rörsocker*, kaffe, bikarbonat, havssalt. (*)Ekologiska ingredienser.',
+      'Ca. 30g. Mandel*, socker*, kakaosmör*, vanilj*, kokos*, rörsocker*, kaffe, matsoda, havssalt. (*)Ekologiska ingredienser.',
     image: productImage4,
   },
 
@@ -101,7 +101,7 @@ const products = [
     description:
       'Två små chokladplattor fyllda med en härlig lakritskolakräm och rullade i lakritspulver och salmiakpulver. Nötfri.',
     ingredients:
-      'Ca. 60g. Kakaomassa*, kakaosmör*, lakritspulver, socker*, glykos, sirap*, kokoskräm*, kokosolja*, bikarbonat, havssalt, rörsocker*, kokos*, salmiakpulver, vanilj*. (*)Ekologiska ingredienser.',
+      'Ca. 60g. Kakaomassa*, kakaosmör*, lakritspulver, socker*, glykos, sirap*, kokoskräm*, kokosolja*, matsoda, havssalt, rörsocker*, kokos*, salmiakpulver, vanilj*. (*)Ekologiska ingredienser.',
     image: productImage7,
   },
 
@@ -113,7 +113,7 @@ const products = [
     description:
       'Krämig "vit" choklad med mycket lakritssmak och toner av karamell. En favorit bland lakritsälskare. Innehåller mandel.',
     ingredients:
-      'Ca. 50g. Kakaosmör*, lakritspulver, rörsocker*, kokos*, bikarbonat, havssalt, lakritsgranulat, mandel. (*)Ekologiska ingredienser.',
+      'Ca. 50g. Kakaosmör*, lakritspulver, rörsocker*, kokos*, matsoda, havssalt, lakritsgranulat, mandel. (*)Ekologiska ingredienser.',
     image: productImage8,
   },
 
