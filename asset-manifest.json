@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a6910c2e.chunk.css",
-    "main.js": "/static/js/main.1d94b29a.chunk.js",
-    "main.js.map": "/static/js/main.1d94b29a.chunk.js.map",
+    "main.js": "/static/js/main.aac9aa7e.chunk.js",
+    "main.js.map": "/static/js/main.aac9aa7e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.014f947d.js",
     "runtime-main.js.map": "/static/js/runtime-main.014f947d.js.map",
     "static/js/2.2048f469.chunk.js": "/static/js/2.2048f469.chunk.js",
@@ -11,20 +11,22 @@
     "static/css/main.a6910c2e.chunk.css.map": "/static/css/main.a6910c2e.chunk.css.map",
     "static/js/2.2048f469.chunk.js.LICENSE.txt": "/static/js/2.2048f469.chunk.js.LICENSE.txt",
     "static/media/background.69c2768b.jpeg": "/static/media/background.69c2768b.jpeg",
-    "static/media/capuccino.eee68810.jpg": "/static/media/capuccino.eee68810.jpg",
+    "static/media/berriesLjusChoklad.92d55919.jpg": "/static/media/berriesLjusChoklad.92d55919.jpg",
+    "static/media/berriesMorkChoklad.f833d7b9.jpg": "/static/media/berriesMorkChoklad.f833d7b9.jpg",
+    "static/media/berriesVitChoklad.58ab1fb5.jpg": "/static/media/berriesVitChoklad.58ab1fb5.jpg",
     "static/media/crunchyRoad.d8b08372.jpg": "/static/media/crunchyRoad.d8b08372.jpg",
     "static/media/garden.42362997.jpeg": "/static/media/garden.42362997.jpeg",
-    "static/media/karamellhjärta.278ee4e7.jpg": "/static/media/karamellhjärta.278ee4e7.jpg",
+    "static/media/karamellOchSalt.74089342.jpg": "/static/media/karamellOchSalt.74089342.jpg",
+    "static/media/karamellhjarta.278ee4e7.jpg": "/static/media/karamellhjarta.278ee4e7.jpg",
     "static/media/lakritsgotties.a62213f2.jpg": "/static/media/lakritsgotties.a62213f2.jpg",
     "static/media/logo.95bd7cbf.png": "/static/media/logo.95bd7cbf.png",
     "static/media/mandelGianduja.f8b69961.jpg": "/static/media/mandelGianduja.f8b69961.jpg",
-    "static/media/matchaLatte.74c4da35.jpg": "/static/media/matchaLatte.74c4da35.jpg",
     "static/media/mercedes.639de478.jpg": "/static/media/mercedes.639de478.jpg",
     "static/media/mjolkchokladMint.d760be6e.jpg": "/static/media/mjolkchokladMint.d760be6e.jpg",
     "static/media/peter.b869627f.jpg": "/static/media/peter.b869627f.jpg",
     "static/media/platta.4340ad8c.jpg": "/static/media/platta.4340ad8c.jpg",
+    "static/media/plattaMork.7902257c.jpg": "/static/media/plattaMork.7902257c.jpg",
     "static/media/polvorones.c46d916a.jpg": "/static/media/polvorones.c46d916a.jpg",
-    "static/media/vitChokladJordgubb.46abbc4c.jpg": "/static/media/vitChokladJordgubb.46abbc4c.jpg",
     "static/media/vitChokladLakrits.9c4ec9ea.jpg": "/static/media/vitChokladLakrits.9c4ec9ea.jpg",
     "static/media/wave.cb99a988.svg": "/static/media/wave.cb99a988.svg"
   },
@@ -32,6 +34,6 @@
     "static/js/runtime-main.014f947d.js",
     "static/js/2.2048f469.chunk.js",
     "static/css/main.a6910c2e.chunk.css",
-    "static/js/main.1d94b29a.chunk.js"
+    "static/js/main.aac9aa7e.chunk.js"
   ]
 }
