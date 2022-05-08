@@ -2,87 +2,69 @@ import React from 'react';
 import './Products.scss';
 import Product from './Product';
 import {Link} from 'react-router-dom';
-// import productImage1 from "../../Assets/products/product1.jpeg";
-// import productImage2 from "../../Assets/products/product2.jpeg";
-// import productImage3 from "../../Assets/products/product3.jpeg";
-// import productImage4 from "../../Assets/products/product4.jpeg";
-// import productImage5 from "../../Assets/products/product5.jpeg";
-// import productImage6 from "../../Assets/products/product6.jpeg";
-// import productImage7 from "../../Assets/products/product7.jpeg";
-// import productImage8 from "../../Assets/products/product8.jpeg";
 
-import productImage1 from '../../Assets/products/platta.jpg';
-import productImage3 from '../../Assets/products/crunchyRoad.jpg';
-import productImage4 from '../../Assets/products/capuccino.jpg';
-import productImage5 from '../../Assets/products/karamellhjärta.jpg';
-import productImage6 from '../../Assets/products/mandelGianduja.jpg';
-import productImage7 from '../../Assets/products/lakritsgotties.jpg';
-import productImage8 from '../../Assets/products/vitChokladLakrits.jpg';
-import productImage9 from '../../Assets/products/vitChokladJordgubb.jpg';
-import productImage10 from '../../Assets/products/polvorones.jpg';
-import productImage11 from '../../Assets/products/mjolkchokladMint.jpg';
-import productImage12 from '../../Assets/products/matchaLatte.jpg';
+import plattaMork from '../../Assets/products/plattaMork.jpg';
+import platta from '../../Assets/products/platta.jpg';
+import crunchyRoad from '../../Assets/products/crunchyRoad.jpg';
+import karamellhjarta from '../../Assets/products/karamellhjarta.jpg';
+import mandelGianduja from '../../Assets/products/mandelGianduja.jpg';
+import lakritsgotties from '../../Assets/products/lakritsgotties.jpg';
+import berriesMorkChoklad from '../../Assets/products/berriesMorkChoklad.jpg';
+import berriesLjusChoklad from '../../Assets/products/berriesLjusChoklad.jpg';
+import berriesVitChoklad from '../../Assets/products/berriesVitChoklad.jpg';
+import vitChokladLakrits from '../../Assets/products/vitChokladLakrits.jpg';
+import polvorones from '../../Assets/products/polvorones.jpg';
+import mjolkchokladMint from '../../Assets/products/mjolkchokladMint.jpg';
+import karamellOchSalt from '../../Assets/products/karamellOchSalt.jpg';
 
 const products = [
   {
     id: 1,
-    name: '"Mjölkchoklad" med lakrits',
+    name: 'Mörk choklad med karamell',
     price: '1st för 8.50 €',
     priceValue: 8.5,
-    description: 'Ljuvlig "mjölkchoklad" med en klick lakritskolakräm i varje hjärta. Nötfri.',
+    description: 'Ljuvlig mörk choklad 70% med en klick kolakräm i varje hjärta. Nötfri.',
     ingredients:
-      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, matsoda, kokosolja*, kokoskräm*, rörsocker*, kokos*, vanilj*, lakritspulver, havssalt, (*)Ekologiska ingredienser.',
-    image: productImage1,
+      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, kokosolja*, kokoskräm*, rörsocker*, kokos*, vanilj*, havssalt, (*)Ekologiska ingredienser.',
+    image: plattaMork,
   },
 
   {
     id: 2,
-    name: '"Mjölkchoklad" med karamell',
+    name: 'Ljus choklad med karamell',
     price: '1st för 8.50 €',
     priceValue: 8.5,
     description: 'Ljuvlig "mjölkchoklad" med en klick kolakräm i varje hjärta. Nötfri.',
     ingredients:
-      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, kokosolja*, kokoskräm*, havssalt,  kakaosmör*, matsoda, rörsocker*, kokos*,  vanilj*. (*)Ekologiska ingredienser.',
-    image: productImage1,
+      'Ca. 90g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, kokosolja*, kokoskräm*, havssalt, rörsocker*, kokos*,  vanilj*. (*)Ekologiska ingredienser.',
+    image: platta,
   },
 
   {
     id: 3,
     name: 'Crunchy road',
-    price: '1st för 4.00 €',
-    priceValue: 4,
+    price: '1st för 5.00 €',
+    priceValue: 5,
     description:
       'Vår finaste 52% "mjölkchoklad" blandad med hälsosamma eko bovete flingor, jätteknaprigt! Nötfri.',
     ingredients:
       'Ca. 50g. Kakaomassa*, kakaosmör*, kokos*, rörsocker*, bovete flingor*. (*)Ekologiska ingredienser.',
-    image: productImage3,
+    image: crunchyRoad,
   },
 
   {
     id: 4,
-    name: 'Cappuccino',
-    price: '6st för 4.00 €',
-    priceValue: 4,
-    description:
-      'Krämig "vit" choklad och finaste Valencia mandlar blandade med starka kaffe prickar.',
-    ingredients:
-      'Ca. 30g. Mandel*, socker*, kakaosmör*, vanilj*, kokos*, rörsocker*, kaffe, matsoda, havssalt. (*)Ekologiska ingredienser.',
-    image: productImage4,
-  },
-
-  {
-    id: 5,
     name: 'Karamellhjärta',
     price: '2st för 7.00 €',
     priceValue: 7,
     description: '"Mjölkchoklad" hjärta fyllt med krämig karamell och knapriga småkakor. Nötfri.',
     ingredients:
       'Ca. 60g. Glutenfri mjölmix, majsstärkelse, socker*, Carlshamn margarin, pumpafrön*, havssalt, bakpulver, dadelsirap, äppelsås*, linfrö*, kakaosmör*, kokos*, kakaomassa*, rörsocker*, kokosolja*, vanilj*, glykos, sirap*, kokoskräm*. (*)Ekologiska ingredienser.',
-    image: productImage5,
+    image: karamellhjarta,
   },
 
   {
-    id: 6,
+    id: 5,
     name: 'Mandel gianduja',
     price: '2st för 6.00 €',
     priceValue: 6,
@@ -90,78 +72,98 @@ const products = [
       'Finaste Valencia mandlar och två toner choklad resulterar i en mycket tillfredställande godbit.',
     ingredients:
       'Ca. 60g. Mandel*, socker*, sirap*, kakaomassa*, kakaosmör*, glykos, vanilj*, havssalt, kokos*, rörsocker*, risstärkelse*, solroslecitin*. kan innehålla spår av hasselnötter. (*)Ekologiska ingredienser.',
-    image: productImage6,
+    image: mandelGianduja,
   },
 
   {
-    id: 7,
+    id: 6,
     name: 'Lakritsgottis',
     price: '3st för 6.00 €',
     priceValue: 6,
     description:
       'Två små chokladplattor fyllda med en härlig lakritskolakräm och rullade i lakritspulver och salmiakpulver. Nötfri.',
     ingredients:
-      'Ca. 60g. Kakaomassa*, kakaosmör*, lakritspulver, socker*, glykos, sirap*, kokoskräm*, kokosolja*, matsoda, havssalt, rörsocker*, kokos*, salmiakpulver, vanilj*. (*)Ekologiska ingredienser.',
-    image: productImage7,
+      'Ca. 60g. Kakaomassa*, kakaosmör*, lakritspulver, socker*, glykos, sirap*, kokoskräm*, kokosolja*, havssalt, rörsocker*, kokos*, salmiakpulver, vanilj*. (*)Ekologiska ingredienser.',
+    image: lakritsgotties,
+  },
+
+  {
+    id: 7,
+    name: 'Mörk choklad & Åländska bär',
+    price: '1st för 7.00 €',
+    priceValue: 7,
+    description: 'Krämig mörk choklad med frystorkade åländska bär. Fräsch och fruktig. Nötfri.',
+    ingredients:
+      'Ca. 70g. Kakaomassa, kakaosmör*, rörsocker*, kokos*, glykos, vanilj*, frystorkade jordgubbar*, hallon*, blåbär*, lingon* och havtorn*. (*)Ekologiska ingredienser.',
+    image: berriesMorkChoklad,
   },
 
   {
     id: 8,
-    name: '"Vit" choklad med lakrits',
-    price: '1st för 5.00 €',
-    priceValue: 5,
-    description:
-      'Krämig "vit" choklad med mycket lakritssmak och toner av karamell. En favorit bland lakritsälskare. Innehåller mandel.',
+    name: 'Ljus choklad & Åländska bär',
+    price: '1st för 7.00 €',
+    priceValue: 7,
+    description: 'Krämig "Mjölkchoklad" med frystorkade åländska bär. Fräsch och fruktig. Nötfri.',
     ingredients:
-      'Ca. 50g. Kakaosmör*, lakritspulver, rörsocker*, kokos*, matsoda, havssalt, lakritsgranulat, mandel. (*)Ekologiska ingredienser.',
-    image: productImage8,
+      'Ca. 70g. Kakaomassa, kakaosmör*, rörsocker*, kokos*, glykos, vanilj*, frystorkade jordgubbar*, hallon*, blåbär*, lingon* och havtorn*. (*)Ekologiska ingredienser.',
+    image: berriesLjusChoklad,
   },
 
   {
     id: 9,
-    name: '"Vit" choklad & jordgubbssymfoni',
-    price: '1st för 8.00 €',
-    priceValue: 8,
-    description:
-      'Krämig "vit" choklad laddat upp med massor av frystorkade jordgubbar. Fräsch och fruktig. Nötfri.',
+    name: '"Vit" choklad & Åländska bär',
+    price: '1st för 7.00 €',
+    priceValue: 7,
+    description: 'Krämig "vit" choklad med frystorkade åländska bär. Fräsch och fruktig. Nötfri.',
     ingredients:
-      'Ca. 80g. Kakaosmör*, rörsocker*, kokos*, glykos, vanilj*, frystorkade jordgubbar, hallon och blåbär. (*)Ekologiska ingredienser.',
-    image: productImage9,
+      'Ca. 70g. Kakaosmör*, rörsocker*, kokos*, glykos, vanilj*, frystorkade jordgubbar*, hallon*, blåbär*, lingon* och havtorn*. (*)Ekologiska ingredienser.',
+    image: berriesVitChoklad,
   },
 
   {
     id: 10,
-    name: 'Polvorones',
-    price: '4st för 4.00 €',
-    priceValue: 4,
+    name: '"Vit" choklad med lakrits',
+    price: '1st för 5.00 €',
+    priceValue: 5,
     description:
-      'Från polvo, det spanska ordet för pulver. Det är en mjuk och mycket smulig shortbread från Spanien. Våra polvorones är baserade på mandel, olivolja och krossade kakaobönor.',
+      'Krämig "vit" choklad med mycket lakritssmak och toner av karamell. En favorit bland lakritsälskare. Nötfri.',
     ingredients:
-      'Ca. 80g. Mandel, glutenfri mjölmix, bovetemjöl*, socker*, olivolja, kanel, havssalt, krossade kakaobönor*. (*)Ekologiska ingredienser.',
-    image: productImage10,
+      'Ca. 50g. Kakaosmör*, lakritspulver, rörsocker*, kokos*, havssalt, lakritsgranulat. (*)Ekologiska ingredienser.',
+    image: vitChokladLakrits,
   },
 
   {
     id: 11,
-    name: '"Mjölkchoklad" med mint',
-    price: '1st för 5.00 €',
+    name: 'Polvorones',
+    price: '4st för 5.00 €',
     priceValue: 5,
-    description: 'Vår krämiga "mjölkchoklad" med en ljuvig mint fyllning.',
+    description:
+      'Från polvo, det spanska ordet för pulver. Det är en mjuk och mycket smulig shortbread från Spanien. Våra polvorones är baserade på mandel, olivolja och krossade kakaobönor.',
     ingredients:
-      'Ca. 40g. Kakaomassa, kakaosmör*, rörsocker*, kokos*, vanilj*, invertsocker, mintolja. (*)Ekologiska ingredienser.',
-    image: productImage11,
+      'Ca. 80g. Mandel, glutenfri mjölmix, bovetemjöl*, socker*, olivolja, kanel, havssalt, krossade kakaobönor*. (*)Ekologiska ingredienser.',
+    image: polvorones,
   },
 
   {
     id: 12,
-    name: 'Matcha-Latte',
-    price: '3st för 9.50 €',
-    priceValue: 9.5,
-    description:
-      'Matcha är ett japanskt pulver som mals av gröna teblad. Gör så här: lägg en halva av vår Matcha-latte i en kopp. Sätt den i micron ca. 1 min. Häll upp 1 dl kokande vatten och 1 dl av din favorit varm “mjölk”. Rör om.',
+    name: 'Ljus choklad med mint',
+    price: '1st för 5.00 €',
+    priceValue: 5,
+    description: 'Vår krämiga "mjölkchoklad" med en ljuvig mint fyllning. Nötfri.',
     ingredients:
-      'Ca. 84g. Kakaosmör*, rörsocker*, kokos*, matchapulver, kanel*, gurkmeja*, vanilj*. (*)Ekologiska ingredienser.',
-    image: productImage12,
+      'Ca. 40g. Kakaomassa, kakaosmör*, rörsocker*, kokos*, vanilj*, invertsocker, mintolja. (*)Ekologiska ingredienser.',
+    image: mjolkchokladMint,
+  },
+
+  {
+    id: 13,
+    name: 'Karamell & Salt',
+    price: '4st för 8.50 €',
+    priceValue: 8.5,
+    description: 'Trippelfyllda chokladknappar som smälter i munnen. Nötfri.',
+    ingredients:
+      'Ca. 140g. Kakaomassa*, kakaosmör*, socker*, glykos, sirap*, kokosolja*, kokoskräm*, havssalt, rörsocker*, kokos*,  vanilj*. (*)Ekologiska ingredienser.',
+    image: karamellOchSalt,
   },
 ];
 
@@ -188,6 +190,7 @@ const Products = (props) => {
           <p>
             <Link to='/Contact'>Kontakta oss</Link> så hjälper vi till!
           </p>
+          <p>Obs! Vi reserverar oss för att vissa produkter kan ta slut.</p>
         </div>
         <div className='flex-wrap'>
           {products.map((product) => (
@@ -199,6 +202,7 @@ const Products = (props) => {
           <p>
             <Link to='/Contact'>Hör av dig</Link> så hjälper vi till!
           </p>
+          <p>Obs! Vi reserverar oss för att vissa produkter kan ta slut.</p>
         </div>
       </div>
     </div>

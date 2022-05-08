@@ -10,7 +10,10 @@ const Footer = () => {
     <div>
       <div className='footer '>
         <div className='footer-green-product-info'>
-          <p>Alla våra produkter är fria från mjölk, gluten och ägg - lämpliga för veganer.</p>
+          <p>
+            Alla våra läckra produkter är fria från mjölk, gluten, soja och ägg - lämpliga för
+            veganer.
+          </p>
         </div>
 
         <div className='footer-information'>
@@ -26,7 +29,7 @@ const Footer = () => {
 
           <p>
             {' '}
-            <a href='https://www.facebook.com/mu.winquist' target='blank' rel='noopener'>
+            <a href='https://www.facebook.com/veganchoklad/' target='blank' rel='noopener'>
               <FaFacebookF className='social-media-icons' />
             </a>{' '}
             |{' '}

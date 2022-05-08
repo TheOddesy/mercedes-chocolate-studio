@@ -22,13 +22,11 @@ const Contact = () => {
                   mail
                 </a>{' '}
                 eller varför inte direkt på{' '}
-                <a href='https://m.me/mu.winquist' target='blank' rel='noopener'>
+                <a href='https://m.me/veganchoklad' target='blank' rel='noopener'>
                   facebook
                 </a>
                 ? Vi svarar vanligtvis inom en dag. Då kan vi komma överens om betalsätt och vart
                 den goda chokladen skall levereras. Var inte blyg! <br />
-                <br />
-                Vi bjuder på frakten på beställningar över 20 €.
               </p>
             </div>
 
@@ -40,7 +38,7 @@ const Contact = () => {
                   mail
                 </a>{' '}
                 eller{' '}
-                <a href='https://m.me/mu.winquist' target='blank' rel='noopener'>
+                <a href='https://m.me/veganchoklad' target='blank' rel='noopener'>
                   facebook
                 </a>{' '}
                 så påbörjar vi en dialog om era behov och önskemål.
@@ -79,7 +77,7 @@ const Contact = () => {
             <div className='contact-flex'>
               <FaFacebookMessenger className='contact-icons' />
               <p>
-                <a href='https://m.me/mu.winquist' target='blank' rel='noopener'>
+                <a href='https://m.me/veganchoklad' target='blank' rel='noopener'>
                   PM till Mercedes
                 </a>
               </p>

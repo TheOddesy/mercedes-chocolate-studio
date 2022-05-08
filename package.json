@@ -42,5 +42,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "comments": {
+    "step 1": "npm run build",
+    "step 2": "git add .",
+    "step 3": "git commit -m",
+    "step 4": "git push",
+    "step 5": "npm run deploy",
+    "step 6": "update in github the domain name in github pages, settings pages",
+    "step 7": "Source - branch gh-pages root",
+    "step 8": "Custom Domain - mercedesstudio.com - save",
+    "step 9": "it will be ok when on top of the page there is a green banner saying -  Your site is published at https://mercedesstudio.com/"
   }
 }
