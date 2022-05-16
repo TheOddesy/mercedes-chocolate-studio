@@ -80,12 +80,12 @@ export default class Order extends React.Component {
                     Tryck här för att kopiera <br></br> dina anteckningar.
                   </button>
                   <p>
-                    Skicka den kopiera texten via{' '}
+                    Skicka den kopierade texten via{' '}
                     <a href='mailto:mercedesstudioaland@gmail.com' target='blank' rel='noopener'>
                       mail
                     </a>{' '}
                     eller{' '}
-                    <a href='https://m.me/mu.winquist' target='blank' rel='noopener'>
+                    <a href='https://m.me/veganchoklad' target='blank' rel='noopener'>
                       messenger
                     </a>{' '}
                     så tar vi hand om din beställning.
