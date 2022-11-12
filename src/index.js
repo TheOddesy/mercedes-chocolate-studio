@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-
+import ClosedWebshopApp from './ClosedWebshop/ClosedApp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ClosedWebshopApp />
   </React.StrictMode>,
   document.getElementById('root')
 );

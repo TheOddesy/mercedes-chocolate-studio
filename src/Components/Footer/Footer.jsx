@@ -11,8 +11,7 @@ const Footer = () => {
       <div className='footer '>
         <div className='footer-green-product-info'>
           <p>
-            Alla våra läckra produkter är fria från mjölk, gluten, soja och ägg - lämpliga för
-            veganer.
+            Alla våra läckra produkter är fria från mjölk, gluten och ägg - lämpliga för veganer.
           </p>
         </div>
 

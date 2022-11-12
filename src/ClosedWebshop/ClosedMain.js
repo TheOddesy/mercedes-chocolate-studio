@@ -1,8 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import './Main.scss';
+import '../Components/Main/Main.scss';
 
-import background from '../../Assets/background/background.jpeg';
+import background from '../Assets/background/background.jpeg';
 
 const Main = () => {
   return (
@@ -20,9 +19,14 @@ const Main = () => {
               ekologiska ingredienser så är de här läckerheterna lämpliga för veganer och många
               till.
             </p>
+
+            <p className='closedWebShop'>Webbshoppen är tillfälligt stängd.</p>
             <p>
-              Ta en titt på våra <Link to='/Products'>produkter</Link> och{' '}
-              <Link to='/Contact'>kontakta</Link> oss så hjälper vi till!
+              Ni hittar våra produkter hos{' '}
+              <a href='https://www.saltshop.ax/' target='blank' rel='noopener'>
+                SALT Konsthantverk
+              </a>{' '}
+              i Sjökvarteret på Åland.
             </p>
           </div>
         </div>
@@ -34,9 +38,13 @@ const Main = () => {
             choklad som är fria från mjölk, gluten och ägg. Med mindre mängd socker och massor med
             ekologiska ingredienser så är de här läckerheterna lämpliga för veganer och många till.
           </p>
+          <p className='closedWebShop'>Webbshoppen är tillfälligt stängd.</p>
           <p>
-            Ta en titt på våra <Link to='/Products'>produkter</Link> och{' '}
-            <Link to='/Contact'>kontakta</Link> oss så hjälper vi till!
+            Ni hittar våra produkter hos{' '}
+            <a href='https://www.saltshop.ax/' target='blank' rel='noopener'>
+              SALT Konsthantverk
+            </a>{' '}
+            i Sjökvarteret på Åland.
           </p>
         </div>
       </div>

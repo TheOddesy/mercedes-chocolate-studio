@@ -49,11 +49,11 @@ const Product = ({product, updateOrders}) => {
             <h3>{product.name}</h3>
             <div className='description'>{product.description}</div>
             <div className='price'>{product.price}</div>
-            <div class='ingredients-wrapper'>
-              <button type='button' class='hover-button'>
+            <div className='ingredients-wrapper'>
+              <button type='button' className='hover-button'>
                 Ingredienser
               </button>
-              <div class='show-ingredients'>
+              <div className='show-ingredients'>
                 <p>{product.ingredients}</p>
               </div>
             </div>
